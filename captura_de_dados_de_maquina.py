@@ -4,7 +4,7 @@ import mysql.connector
 
 i = 0
 
-db_connection = mysql.connector.connect(host='localhost', user='root', password='150621', database='testeAutomacao')
+db_connection = mysql.connector.connect(host='localhost', user='root', password='XXXXXX', database='TagTech')
 cursor = db_connection.cursor()
 
 
@@ -15,7 +15,7 @@ while True:
     UsoDeDisco = psutil.disk_usage('C:\\')
     i = i + 1
 
-    sql = "INSERT INTO registros (percentualCPU, usoCPU, usoMemoria, usoDisco) VALUES (%s, %s, %s, %s)"
+    sql = "INSERT INTO historico (percentualCPU, usoCPU, usoMemoria, usoDisco) VALUES (%s, %s, %s, %s)"
     values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent)
     cursor.execute(sql, values)
     db_connection.commit()
