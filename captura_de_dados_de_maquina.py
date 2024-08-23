@@ -1,10 +1,12 @@
 import psutil
 import time
 import mysql.connector
+from socket import gethostname
 
 i = 0
+NomeMaquina = gethostname()
 
-db_connection = mysql.connector.connect(host='localhost', user='root', password='XXXXXX', database='TagTech')
+db_connection = mysql.connector.connect(host='10.18.33.25', user='enzo', password='Ensunel@2006', database='testeAutomacao')
 cursor = db_connection.cursor()
 
 
@@ -15,8 +17,8 @@ while True:
     UsoDeDisco = psutil.disk_usage('C:\\')
     i = i + 1
 
-    sql = "INSERT INTO historico (percentualCPU, usoCPU, usoMemoria, usoDisco) VALUES (%s, %s, %s, %s)"
-    values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent)
+    sql = "INSERT INTO registros (percentualCPU, usoCPU, usoMemoria, usoDisco, NomeMaquina) VALUES (%s, %s, %s, %s, %s)"
+    values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent, NomeMaquina)
     cursor.execute(sql, values)
     db_connection.commit()
 
@@ -33,7 +35,6 @@ while True:
 
     """.format(i, UsoDeCPU, FreqDeCPU.current, UsoDeMemo.percent, UsoDeDisco.percent))
     time.sleep(3)
-
 
 
     
