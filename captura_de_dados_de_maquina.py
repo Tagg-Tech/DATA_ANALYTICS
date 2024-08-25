@@ -6,7 +6,7 @@ from socket import gethostname
 i = 0
 NomeMaquina = gethostname()
 
-db_connection = mysql.connector.connect(host='10.18.33.25', user='enzo', password='Ensunel@2006', database='testeAutomacao')
+db_connection = mysql.connector.connect(host='host', user='usuario', password='senha', database='testeAutomacao')
 cursor = db_connection.cursor()
 
 
