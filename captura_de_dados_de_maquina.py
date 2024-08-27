@@ -8,30 +8,30 @@ i = 0
 nomeMaquina = gethostname()
 sistemaOperacional = platform.system()
 
-# db_connection = mysql.connector.connect(host='host', user='usuario', password='senha', database='testeAutomacao')
-# cursor = db_connection.cursor()
+db_connection = mysql.connector.connect(host='host', user='usuario', password='senha', database='testeAutomacao')
+cursor = db_connection.cursor()
 
 
 while True:
 
     if(sistemaOperacional=="Windows"):
-        UsoDeDisco = psutil.disk_usage('C:\\')
+        usoDeDisco = psutil.disk_usage('C:\\')
     elif(sistemaOperacional=="Linux"):
-        UsoDeDisco = psutil.disk_usage('/')
+        usoDeDisco = psutil.disk_usage('/')
 
-    UsoDeCPU = psutil.cpu_percent(interval=1)
-    FreqDeCPU = psutil.cpu_freq()
-    UsoDeMemo = psutil.virtual_memory()
+    usoDeCPU = psutil.cpu_percent(interval=1)
+    freqDeCPU = psutil.cpu_freq()
+    usoDeMemo = psutil.virtual_memory()
 
     qtdNucleos = psutil.cpu_count()
     qtdNucleosVirtuais = psutil.cpu_count(logical=False)
 
     i = i + 1
 
-    # sql = "INSERT INTO registros (percentualCPU, usoCPU, usoMemoria, usoDisco, qtdNucleos, qtdNucleosVirtuais, nomeMaquina) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-    # values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, nomeMaquina)
-    # cursor.execute(sql, values)
-    # db_connection.commit()
+    sql = "INSERT INTO registros (nomeMaquina, sistemaOperacional, qtdTotalMemoria, percentualMemoria, qtdTotalDisco, qtdUtilizadaDisco, percentualDisco, qtdNucleosCPU, qtdNucleosVirtuaisCPU, percentualCPU, frequenciaCPU) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    values = (nomeMaquina, sistemaOperacional, usoDeMemo.total, usoDeMemo.percent, usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current)
+    cursor.execute(sql, values)
+    db_connection.commit()
 
     print(
     """
@@ -42,21 +42,26 @@ while True:
     Percentual de uso de CPU: {:.2f}%
     Frequência da CPU: {:.2f} MHz
 
-    Quantidade total de memória: {:d}
+    Quantidade total de memória: {:d} GB
     Percentual de uso da memória: {:.2f}%
 
-    Quantidade total de disco: {:d}
-    Quantidade utilizada de disco: {:d}
+    Quantidade total de disco: {:d} GB
+    Quantidade utilizada de disco: {:d} GB
     Percentual de uso do disco: {:.2f}%
 
     Nome da máquina: {:s}
     Sistema Operacional: {:s}
 
-    """.format(i, qtdNucleos, qtdNucleosVirtuais, UsoDeCPU, FreqDeCPU.current, 
-               UsoDeMemo.total, UsoDeMemo.percent, 
-               UsoDeDisco.total, UsoDeDisco.used, UsoDeDisco.percent, 
+    """.format(i, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current, 
+               usoDeMemo.total, usoDeMemo.percent, 
+               usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, 
                nomeMaquina, sistemaOperacional))
     time.sleep(3)
+
+
+    # Exemplo de como subir pra EC2
+    # 
+    # scp -i <chave> <arquivo python> <usuario>@<ip>:~/<pasta que voce quer salvar>
 
 
     
