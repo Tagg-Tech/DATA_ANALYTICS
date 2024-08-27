@@ -15,21 +15,18 @@ sistemaOperacional = platform.system()
 while True:
 
     if(sistemaOperacional=="Windows"):
-        UsoDeCPU = psutil.cpu_percent(interval=1)
-        FreqDeCPU = psutil.cpu_freq()
-        UsoDeMemo = psutil.virtual_memory()
         UsoDeDisco = psutil.disk_usage('C:\\')
-        qtdNucleos = psutil.cpu_count()
-        qtdNucleosVirtuais = psutil.cpu_count(logical=False)
-        i = i + 1
     elif(sistemaOperacional=="Linux"):
-        UsoDeCPU = psutil.cpu_percent(interval=1)
-        FreqDeCPU = psutil.cpu_freq()
-        UsoDeMemo = psutil.virtual_memory()
         UsoDeDisco = psutil.disk_usage('/')
-        qtdNucleos = psutil.cpu_count()
-        qtdNucleosVirtuais = psutil.cpu_count(logical=False)
-        i = i + 1
+
+    UsoDeCPU = psutil.cpu_percent(interval=1)
+    FreqDeCPU = psutil.cpu_freq()
+    UsoDeMemo = psutil.virtual_memory()
+
+    qtdNucleos = psutil.cpu_count()
+    qtdNucleosVirtuais = psutil.cpu_count(logical=False)
+
+    i = i + 1
 
     # sql = "INSERT INTO registros (percentualCPU, usoCPU, usoMemoria, usoDisco, qtdNucleos, qtdNucleosVirtuais, nomeMaquina) VALUES (%s, %s, %s, %s, %s, %s, %s)"
     # values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, nomeMaquina)
@@ -49,16 +46,15 @@ while True:
     Percentual de uso da memória: {:.2f}%
 
     Quantidade total de disco: {:d}
+    Quantidade utilizada de disco: {:d}
     Percentual de uso do disco: {:.2f}%
-
-    
 
     Nome da máquina: {:s}
     Sistema Operacional: {:s}
 
     """.format(i, qtdNucleos, qtdNucleosVirtuais, UsoDeCPU, FreqDeCPU.current, 
-               UsoDeMemo.percent, 
-               UsoDeDisco.percent, 
+               UsoDeMemo.total, UsoDeMemo.percent, 
+               UsoDeDisco.total, UsoDeDisco.used, UsoDeDisco.percent, 
                nomeMaquina, sistemaOperacional))
     time.sleep(3)
 
