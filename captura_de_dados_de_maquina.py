@@ -1,39 +1,65 @@
 import psutil
 import time
 import mysql.connector
+import platform
 from socket import gethostname
 
 i = 0
-NomeMaquina = gethostname()
+nomeMaquina = gethostname()
+sistemaOperacional = platform.system()
 
-db_connection = mysql.connector.connect(host='host', user='usuario', password='senha', database='testeAutomacao')
-cursor = db_connection.cursor()
+# db_connection = mysql.connector.connect(host='host', user='usuario', password='senha', database='testeAutomacao')
+# cursor = db_connection.cursor()
 
 
 while True:
-    UsoDeCPU = psutil.cpu_percent(interval=1)
-    FreqDeCPU = psutil.cpu_freq()
-    UsoDeMemo = psutil.virtual_memory()
-    UsoDeDisco = psutil.disk_usage('C:\\')
-    i = i + 1
 
-    sql = "INSERT INTO registros (percentualCPU, usoCPU, usoMemoria, usoDisco, NomeMaquina) VALUES (%s, %s, %s, %s, %s)"
-    values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent, NomeMaquina)
-    cursor.execute(sql, values)
-    db_connection.commit()
+    if(sistemaOperacional=="Windows"):
+        UsoDeCPU = psutil.cpu_percent(interval=1)
+        FreqDeCPU = psutil.cpu_freq()
+        UsoDeMemo = psutil.virtual_memory()
+        UsoDeDisco = psutil.disk_usage('C:\\')
+        qtdNucleos = psutil.cpu_count()
+        qtdNucleosVirtuais = psutil.cpu_count(logical=False)
+        i = i + 1
+    elif(sistemaOperacional=="Linux"):
+        UsoDeCPU = psutil.cpu_percent(interval=1)
+        FreqDeCPU = psutil.cpu_freq()
+        UsoDeMemo = psutil.virtual_memory()
+        UsoDeDisco = psutil.disk_usage('/')
+        qtdNucleos = psutil.cpu_count()
+        qtdNucleosVirtuais = psutil.cpu_count(logical=False)
+        i = i + 1
+
+    # sql = "INSERT INTO registros (percentualCPU, usoCPU, usoMemoria, usoDisco, qtdNucleos, qtdNucleosVirtuais, nomeMaquina) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    # values = (FreqDeCPU.current, UsoDeCPU, UsoDeMemo.percent, UsoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, nomeMaquina)
+    # cursor.execute(sql, values)
+    # db_connection.commit()
 
     print(
     """
-    {:.1f}º CAPTURA
+    {:d}º CAPTURA
     ----------------------------------
+    Quantidade total de núcleos de CPU: {:d}
+    Quantidade total de núcleos virtuais de CPU: {:d}
     Percentual de uso de CPU: {:.2f}%
     Frequência da CPU: {:.2f} MHz
 
-    Percentual de uso da Memória: {:.2f}%
+    Quantidade total de memória: {:d}
+    Percentual de uso da memória: {:.2f}%
 
-    Percentual de uso do Disco: {:.2f}%
+    Quantidade total de disco: {:d}
+    Percentual de uso do disco: {:.2f}%
 
-    """.format(i, UsoDeCPU, FreqDeCPU.current, UsoDeMemo.percent, UsoDeDisco.percent))
+    
+
+    Nome da máquina: {:s}
+    Sistema Operacional: {:s}
+
+    """.format(i, qtdNucleos, qtdNucleosVirtuais, UsoDeCPU, FreqDeCPU.current, 
+               UsoDeMemo.percent, 
+               UsoDeDisco.percent, 
+               nomeMaquina, sistemaOperacional))
     time.sleep(3)
 
 
