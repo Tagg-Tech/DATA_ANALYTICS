@@ -26,6 +26,12 @@ while True:
     qtdNucleos = psutil.cpu_count()
     qtdNucleosVirtuais = psutil.cpu_count(logical=False)
 
+    nomeUsuario = psutil.users()[0].name
+    qtdBateria = psutil.sensors_battery()[0]
+    segundosParaAcabar = psutil.sensors_battery()[1]
+    conectadoEnergia = psutil.sensors_battery()[2]
+
+
     i = i + 1
 
     # sql = "INSERT INTO registros (nomeMaquina, sistemaOperacional, qtdTotalMemoria, percentualMemoria, qtdTotalDisco, qtdUtilizadaDisco, percentualDisco, qtdNucleosCPU, qtdNucleosVirtuaisCPU, percentualCPU, frequenciaCPU) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
@@ -51,20 +57,29 @@ while True:
 
     Nome da máquina: {:s}
     Sistema Operacional: {:s}
+    Nome do usuário: {:s}
 
+    Porcentagem de bateria disponível: {:d}
+    Segundos até a bateria acabar: {:d}
+    Está conectado na tomada? {:b}
     """.format(i, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current, 
                usoDeMemo.total, usoDeMemo.percent, 
                usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, 
-               nomeMaquina, sistemaOperacional))
+               nomeMaquina, sistemaOperacional,
+               nomeUsuario,
+               qtdBateria, segundosParaAcabar, conectadoEnergia))
     time.sleep(5)
 
     controle = 0
 
     for process in psutil.process_iter():
+        print("\n"+"PROCESSOS DO SISTEMA")
         print(f"ID: {process.pid}, Nome: {process.name()}, Status: {process.status()}")
         controle += 1
         if controle == 5:
             break
+
+    print("##############################################################################################")
 
 
 
