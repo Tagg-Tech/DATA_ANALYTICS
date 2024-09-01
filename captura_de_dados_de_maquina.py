@@ -1,6 +1,6 @@
 import psutil
 import time
-# import mysql.connector
+import mysql.connector
 import platform
 from socket import gethostname
 
@@ -8,8 +8,8 @@ i = 0
 nomeMaquina = gethostname()
 sistemaOperacional = platform.system()
 
-# db_connection = mysql.connector.connect(host='host', user='usuario', password='senha', database='testeAutomacao')
-# cursor = db_connection.cursor()
+db_connection = mysql.connector.connect(host='localhost', user='root', password='150621', database='teste')
+cursor = db_connection.cursor()
 
 
 while True:
@@ -34,10 +34,11 @@ while True:
 
     i = i + 1
 
-    # sql = "INSERT INTO registros (nomeMaquina, sistemaOperacional, qtdTotalMemoria, percentualMemoria, qtdTotalDisco, qtdUtilizadaDisco, percentualDisco, qtdNucleosCPU, qtdNucleosVirtuaisCPU, percentualCPU, frequenciaCPU) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    # values = (nomeMaquina, sistemaOperacional, usoDeMemo.total, usoDeMemo.percent, usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current)
-    # cursor.execute(sql, values)
-    # db_connection.commit()
+    sql = "INSERT INTO registros (nomeMaquina, sistemaOperacional, qtdTotalMemoria, percentualMemoria, qtdTotalDisco, qtdUtilizadaDisco, percentualDisco, qtdNucleosCPU, qtdNucleosVirtuaisCPU, percentualCPU, frequenciaCPU, nomeUsuario, qtdBateria, segundosParaAcabar, conectadoEnergia) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    values = (nomeMaquina, sistemaOperacional, usoDeMemo.total, usoDeMemo.percent, usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current, nomeUsuario, qtdBateria, segundosParaAcabar, conectadoEnergia)
+    cursor.execute(sql, values)
+    db_connection.commit()
+
 
     print(
     """
@@ -70,15 +71,7 @@ while True:
                qtdBateria, segundosParaAcabar, conectadoEnergia))
     time.sleep(5)
 
-    controle = 0
-
-    for process in psutil.process_iter():
-        print("\n"+"PROCESSOS DO SISTEMA")
-        print(f"ID: {process.pid}, Nome: {process.name()}, Status: {process.status()}")
-        controle += 1
-        if controle == 5:
-            break
-
+    
     print("##############################################################################################")
 
 
