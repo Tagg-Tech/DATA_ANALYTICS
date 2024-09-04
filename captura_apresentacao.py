@@ -27,9 +27,6 @@ while True:
     qtdNucleosVirtuais = psutil.cpu_count(logical=False)
 
     nomeUsuario = psutil.users()[0].name
-    qtdBateria = psutil.sensors_battery()[0]
-    segundosParaAcabar = psutil.sensors_battery()[1]
-    conectadoEnergia = psutil.sensors_battery()[2]
 
 
     i = i + 1
@@ -58,16 +55,11 @@ while True:
     Nome da máquina: {:s}
     Sistema Operacional: {:s}
     Nome do usuário: {:s}
-
-    Porcentagem de bateria disponível: {:d}
-    Segundos até a bateria acabar: {:d}
-    Está conectado na tomada? {:b}
     """.format(i, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current, 
                usoDeMemo.total, usoDeMemo.percent, 
                usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, 
                nomeMaquina, sistemaOperacional,
-               nomeUsuario,
-               qtdBateria, segundosParaAcabar, conectadoEnergia))
+               nomeUsuario))
     time.sleep(5)
 
     controle = 0
