@@ -62,14 +62,6 @@ while True:
                nomeUsuario))
     time.sleep(5)
 
-    controle = 0
-
-    for process in psutil.process_iter():
-        print("\n"+"PROCESSOS DO SISTEMA")
-        print(f"ID: {process.pid}, Nome: {process.name()}, Status: {process.status()}")
-        controle += 1
-        if controle == 5:
-            break
 
     print("##############################################################################################")
 
