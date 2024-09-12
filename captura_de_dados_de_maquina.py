@@ -62,7 +62,7 @@ while True:
                usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, 
                nomeMaquina, sistemaOperacional,
                nomeUsuario))
-    time.sleep(5)
+    time.sleep(2)
 
     
     print("##############################################################################################")
