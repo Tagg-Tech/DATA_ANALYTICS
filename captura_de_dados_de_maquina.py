@@ -5,10 +5,10 @@ import platform
 from socket import gethostname
 
 i = 0
-nomeMaquina = gethostname()
+nomeMaquina = gethostname()  
 sistemaOperacional = platform.system()
 
-db_connection = mysql.connector.connect(host='10.18.33.25', user='enzo', password='Ensunel@2006', database='testeAutomacao')
+db_connection = mysql.connector.connect(host='localhost', user='root', password='18082005vmag@', database='TagTech')
 cursor = db_connection.cursor()
 
 
@@ -23,52 +23,35 @@ while True:
     freqDeCPU = psutil.cpu_freq()
     usoDeMemo = psutil.virtual_memory()
 
-    qtdNucleos = psutil.cpu_count()
-    qtdNucleosVirtuais = psutil.cpu_count(logical=False)
-
-    nomeUsuario = psutil.users()[0].name
-
 
     i = i + 1
 
-    sql = "INSERT INTO registros (nomeMaquina, sistemaOperacional, qtdTotalMemoria, percentualMemoria, qtdTotalDisco, qtdUtilizadaDisco, percentualDisco, qtdNucleosCPU, qtdNucleosVirtuaisCPU, percentualCPU, frequenciaCPU, nomeUsuario) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-    values = (nomeMaquina, sistemaOperacional, usoDeMemo.total, usoDeMemo.percent, usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current, nomeUsuario)
+    sql = "INSERT INTO registros ( percentualMemoria, qtdUtilizadaDisco, percentualDisco, percentualCPU, frequenciaCPU) VALUES (%s, %s, %s, %s, %s)"
+    values = (usoDeMemo.percent, usoDeDisco.used, usoDeDisco.percent, usoDeCPU, freqDeCPU.current)
     cursor.execute(sql, values)
     db_connection.commit()
-
+    print(freqDeCPU)
 
     print(
     """
     {:d}º CAPTURA
     ----------------------------------
-    Quantidade total de núcleos de CPU: {:d}
-    Quantidade total de núcleos virtuais de CPU: {:d}
+
     Percentual de uso de CPU: {:.2f}%
     Frequência da CPU: {:.2f} MHz
 
-    Quantidade total de memória: {:d} GB
+    Quantidade total de memória: {:.2f} GB
     Percentual de uso da memória: {:.2f}%
 
-    Quantidade total de disco: {:d} GB
-    Quantidade utilizada de disco: {:d} GB
+    Quantidade utilizada de disco: {:.2f} GB
     Percentual de uso do disco: {:.2f}%
 
-    Nome da máquina: {:s}
-    Sistema Operacional: {:s}
-    Nome do usuário: {:s}
-
-    """.format(i, qtdNucleos, qtdNucleosVirtuais, usoDeCPU, freqDeCPU.current, 
-               usoDeMemo.total, usoDeMemo.percent, 
-               usoDeDisco.total, usoDeDisco.used, usoDeDisco.percent, 
-               nomeMaquina, sistemaOperacional,
-               nomeUsuario))
-    time.sleep(2)
+    """
+    .format(i, usoDeCPU, freqDeCPU.current, 
+               usoDeMemo.percent, 
+               round(usoDeDisco.used / (1024 ** 3),2),  # Formatado como float com 2 casas decimais
+               usoDeDisco.percent))
+    time.sleep(10)
 
     
     print("##############################################################################################")
-
-
-
-
-
-    
