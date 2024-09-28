@@ -1,0 +1,4 @@
+https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues
+
+
+https://developer.atlassian.com/server/jira/platform/rest/v10000/api-group-issue/#api-api-2-issue-post
