@@ -1,23 +1,22 @@
-# This code sample uses the 'requests' library:
-# http://docs.python-requests.org
-import requests
+import requests, json, dotenv , os
 from requests.auth import HTTPBasicAuth
-import json
+
+
 #pip install python-dotenv
-import dotenv
-import os
 
 dotenv.load_dotenv(dotenv.find_dotenv())
 
 
-url = "https://tagtech.atlassian.net//rest/api/2/issue"
-
+baseurl = os.getenv("URL")
+url = f'{baseurl}//rest/api/2/issue'
+token = os.getenv("TOKEN")
+email = os.getenv("LOGIN")
 headers = {
   "Accept": "application/json",
   "Content-Type": "application/json"
 }
 
-
+variavel = 'Quinta'
 payload=json.dumps(
     {
         "fields":{
@@ -25,7 +24,7 @@ payload=json.dumps(
                 {
                     "key":"TAG"
                 },
-                "summary": "Segunda task usando REST API",
+                "summary": "{} task usando REST API".format(variavel),
                 "description": "Esse alerta foi criado usando o python",
                 "issuetype":{
                     "name":"Support"
@@ -36,7 +35,7 @@ payload=json.dumps(
 
 
 
-response = requests.post(url,headers=headers,data=payload,auth=("",""))
+response = requests.post(url,headers=headers,data=payload,auth=(email,token))
 
 
 print(response.text)

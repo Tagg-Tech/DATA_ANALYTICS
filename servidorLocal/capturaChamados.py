@@ -1,12 +1,16 @@
-import requests as r,  json
+import requests as r,  json,  dotenv , os
+
 
 id_projeto = '10000'
 #10003 é referente a suporte
 id_tarefa = '10003'
 
-url = 'https://tagtech.atlassian.net'
-token = ''
-login = ''
+dotenv.load_dotenv(dotenv.find_dotenv())
+
+url = os.getenv("URL")
+token = os.getenv("TOKEN")
+login = os.getenv("LOGIN")
+
 
 headers = {
     "Accept":"application/json",
