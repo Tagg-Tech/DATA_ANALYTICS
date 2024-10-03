@@ -90,7 +90,7 @@ def capturarDf():
         dados = {
         'idDados': i,
         'dataHora': data,
-        'percCPU': freqDeCPU.current ,
+        'percCPU': freqDeCPU,
         'tempoInativo': freqDeCPU,
         'percRAM': percentRAM,
         'percDisc': percentDisco,
