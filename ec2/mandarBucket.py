@@ -1,9 +1,26 @@
-import boto3
-import os
+import boto3, dotenv , os
 
 s3 = boto3.client('s3')
 
-bucket_name = 'seu-bucket-s3'
+dotenv.load_dotenv(dotenv.find_dotenv())
+
+baseurl = os.getenv("URL")
+url = f'{baseurl}//rest/api/2/issue'
+token = os.getenv("TOKEN")
+email = os.getenv("LOGIN")
+key_id = os.getenv("KEY_ID")
+key_acess = os.getenv("KEY_ACESS")
+aws_token = os.getenv("AWS_TOKEN")
+
+
+s3 = boto3.client( 's3',
+          aws_access_key=key_id,
+          aws_secret_access_key=key_acess,
+          aws_session_token=aws_token
+)
+
+
+bucket_name = 'tagtech-raw'
 pasta_local = 'ec2/csv'
 
 for arquivo in os.listdir(pasta_local):

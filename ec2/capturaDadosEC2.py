@@ -1,20 +1,20 @@
-import psutil
-# import psutil, dotenv , os, requests,  json
+
+import psutil, dotenv , os, requests,  json
 import time
 import platform
 from socket import gethostname
 import pandas as pd
 
-#dotenv.load_dotenv(dotenv.find_dotenv())
+dotenv.load_dotenv(dotenv.find_dotenv())
 
 nomeMaquina = gethostname()  
 sistemaOperacional = platform.system()
 
 
-#baseurl = os.getenv("URL")
-#url = f'{baseurl}//rest/api/2/issue'
-#token = os.getenv("TOKEN")
-#email = os.getenv("LOGIN")
+baseurl = os.getenv("URL")
+url = f'{baseurl}//rest/api/2/issue'
+token = os.getenv("TOKEN")
+email = os.getenv("LOGIN")
 
 
 
