@@ -35,7 +35,7 @@ def mandarAlertaJira(componente, numPico):
             "fields":{
                 "project":
                     {
-                        "key":"TAG"
+                        "key":"THD"
                     },
                     "summary": "pico de uso do componente : {} as {}".format(componente, data),
                     "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, data, nomeMaquina),
@@ -69,6 +69,7 @@ while True:
     percentRAM = memRAM.percent 
     discoUsado = disco.used
     percentDisco = disco.percent
+    
     
     if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
     if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)

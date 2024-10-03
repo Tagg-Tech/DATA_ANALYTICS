@@ -91,7 +91,7 @@ def capturarDf():
         'idDados': i,
         'dataHora': data,
         'percCPU': freqDeCPU.current ,
-        'tempoInativo': freqDeCPU.current,
+        'tempoInativo': freqDeCPU,
         'percRAM': percentRAM,
         'percDisc': percentDisco,
         'usedDisc': discoUsado,
