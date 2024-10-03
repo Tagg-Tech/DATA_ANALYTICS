@@ -22,7 +22,7 @@ s3 = boto3.client(
 
 
 bucket_name = 'tagtech-raw'
-pasta_local = 'ec2/csv'
+pasta_local = 'csv'
 
 for arquivo in os.listdir(pasta_local):
     caminho_arquivo = os.path.join(pasta_local, arquivo)
