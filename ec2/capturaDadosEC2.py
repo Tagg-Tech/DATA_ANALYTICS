@@ -115,7 +115,7 @@ def capturarDf():
         
         print("##############################################################################################")
         
-    df.to_csv(f'ec2/csv/{data_formatada}.csv', index=False)
+    df.to_csv(f'csv/{data_formatada}.csv', index=False)
     
     
 while True:
