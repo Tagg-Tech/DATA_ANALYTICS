@@ -13,10 +13,11 @@ key_acess = os.getenv("KEY_ACESS")
 aws_token = os.getenv("AWS_TOKEN")
 
 
-s3 = boto3.client( 's3',
-          aws_access_key=key_id,
-          aws_secret_access_key=key_acess,
-          aws_session_token=aws_token
+s3 = boto3.client(
+    's3',
+    aws_access_key_id=key_id,
+    aws_secret_access_key=key_acess,
+    aws_session_token=aws_token
 )
 
 
