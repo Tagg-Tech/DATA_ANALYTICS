@@ -12,11 +12,12 @@ testeDownTime$dataHora = as.POSIXct(testeDownTime$dataHora, format= "%Y-%m-%d %H
 ponto = min(testeDownTime$dataHora)
 testeDownTime$tempo = as.numeric(difftime(testeDownTime$dataHora, ponto, units="mins"))
 
-
+# Criei um modelo com duas variaveis independentes(x1 e x2)
 modelo = lm(tempo ~ testeDownTime$percentualMemoria + testeDownTime$percentualCPU, data = testeDownTime)
 
 
 summary(modelo)
+# Interpretação: O coeficiente do resultado me diz que a estimativa de continuação das leituras iria crashar o servidor
 
 ggplot(testeDownTime, aes(x = tempo, y = downTime)) +
   geom_point() +
