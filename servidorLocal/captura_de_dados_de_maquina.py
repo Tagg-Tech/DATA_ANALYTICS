@@ -70,7 +70,7 @@ while True:
     discoUsado = disco.used
     percentDisco = disco.percent
     
-    
+    usoDeCPU = 87
     if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
     if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)
     if percentDisco >= 80:  mandarAlertaJira("disco", percentDisco)
