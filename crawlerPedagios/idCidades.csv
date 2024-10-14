@@ -1,0 +1,372 @@
+id,name,state,country
+3928,Mairiporã,SP,BR  
+8950,Santana da Vargem,MG,BR  
+9012,São Sebastião da Vargem Alegre,MG,BR  
+3553,Vargem,SP,BR  
+4484,Vargem,SC,BR  
+9066,Vargem Alegre,MG,BR  
+4717,Vargem Alegre,RJ,BR  
+8278,Vargem Alta,ES,BR  
+4483,Vargem Bonita,SC,BR  
+9067,Vargem Bonita,MG,BR  
+6026,Vargem Grande,RJ,BR  
+8524,Vargem Grande,MA,BR  
+9068,Vargem Grande do Rio Pardo,MG,BR  
+3551,Vargem Grande do Sul,SP,BR  
+3552,Vargem Grande Paulista,SP,BR  
+3178,Cambuí,MG,BR  
+8989,São Gonçalo do Sapucaí,MG,BR  
+6895,Carmo da Cachoeira,MG,BR  
+8966,Santo Antônio do Amparo,MG,BR  
+8588,Carmópolis de Minas,MG,BR  
+8762,Itatiaiuçu,MG,BR  
+6363,Casimiro de Abreu,RJ,BR  
+6356,Campos dos Goytacazes,RJ,BR  
+5955,Rio Bonito,RJ,BR  
+6477,Rio Bonito do Iguaçu,PR,BR  
+5980,São Gonçalo,RJ,BR  
+7439,São Gonçalo,PB,BR  
+8985,São Gonçalo do Abaeté,MG,BR  
+5938,São Gonçalo do Amarante,RN,BR  
+8149,São Gonçalo do Amarante,CE,BR  
+6886,São Gonçalo do Gurguéia,PI,BR  
+8986,São Gonçalo do Pará,MG,BR  
+6925,São Gonçalo do Piauí,PI,BR  
+8987,São Gonçalo do Rio Abaixo,MG,BR  
+4437,São Gonçalo do Rio das Pedras,MG,BR  
+8988,São Gonçalo do Rio Preto,MG,BR  
+8989,São Gonçalo do Sapucaí,MG,BR  
+3930,São Gonçalo dos Campos,BA,BR  
+6551,São José dos Pinhais,PR,BR  
+4923,Garuva,SC,BR  
+5068,Araquari,SC,BR  
+4778,Porto Belo,SC,BR  
+4756,Palhoça,SC,BR  
+4896,Correia Pinto,SC,BR  
+6769,Fazenda Rio Grande,PR,BR  
+3702,Monte Castelo,SP,BR  
+5000,Monte Castelo,SC,BR  
+6491,Santa Cruz de Monte Castelo,PR,BR  
+3571,Aparecida do Rio Negro,TO,BR  
+5504,Rio Negro,MS,BR  
+6481,Rio Negro,PR,BR  
+6226,Santa Isabel do Rio Negro,AM,BR  
+4829,Santa Cecília,SC,BR  
+7425,Santa Cecília,PB,BR  
+6490,Santa Cecília do Pavão,PR,BR  
+5134,Santa Cecília do Sul,RS,BR  
+3695,São Lourenço da Serra,SP,BR  
+3960,Miracatu,SP,BR  
+3880,Juquiá,SP,BR  
+4451,Cajati,SP,BR  
+4365,Barra do Turvo,SP,BR  
+6700,Campina Grande do Sul,PR,BR  
+8292,Alexânia,GO,BR  
+3156,Perdizes,MG,BR  
+7654,Conceição das Alagoas,MG,BR  
+3247,Goianápolis,GO,BR  
+3181,Piracanjuba,GO,BR  
+7537,Itumbiara,GO,BR  
+4657,Águas da Prata,SP,BR  
+8563,Cachoeira da Prata,MG,BR  
+6371,Córrego da Prata,RJ,BR  
+5682,Lagoa da Prata,MG,BR  
+5288,Nova Prata,RS,BR  
+6657,Nova Prata do Iguaçu,PR,BR  
+7412,Prata,PB,BR  
+3225,Prata,MG,BR  
+6842,Prata do Piauí,PI,BR  
+8977,São Domingos do Prata,MG,BR  
+5043,Vista Alegre do Prata,RS,BR  
+8699,Fronteira,MG,BR  
+8698,Fronteira dos Vales,MG,BR  
+7049,Fronteiras,PI,BR  
+6927,São João da Fronteira,PI,BR  
+3533,Três Fronteiras,SP,BR  
+7657,Florestal,MG,BR  
+5050,Abelardo Luz,SC,BR  
+8821,Luz,MG,BR  
+4985,Luzerna,SC,BR  
+7538,Luziânia,GO,BR  
+7079,Luzilândia,PI,BR  
+3401,Luzinópolis,TO,BR  
+3217,Mariluz,PR,BR  
+3726,Nova Luzitânia,SP,BR  
+3601,Queluz,SP,BR  
+7374,Queluzito,MG,BR  
+3192,Santaluz,BA,BR  
+6852,Santa Luz,PI,BR  
+6919,Santa Luzia,MG,BR  
+8481,Santa Luzia,MA,BR  
+7428,Santa Luzia,PB,BR  
+7934,Santa Luzia,BA,BR  
+5762,Santa Luzia d'Oeste,RO,BR  
+4589,Santa Luzia do Itanhy,SE,BR  
+4595,Santa Luzia do Norte,AL,BR  
+7501,Santa Luzia do Pará,PA,BR  
+8480,Santa Luzia do Paruá,MA,BR  
+5678,Campos Altos,MG,BR  
+6073,Duque de Caxias,RJ,BR  
+6286,Areal,RJ,BR  
+4315,Arealva,SP,BR  
+9044,Simão Pereira,MG,BR  
+7603,Campo Verde,MT,BR  
+7623,Itiquira,MT,BR  
+7664,Rondonópolis,MT,BR  
+7615,Cuiabá,MT,BR  
+7625,Jangada,MT,BR  
+7632,Nobres,MT,BR  
+7637,Nova Mutum,MT,BR  
+7629,Lucas do Rio Verde,MT,BR  
+7687,Sorriso,MT,BR  
+8539,Araguari,MG,BR  
+4129,Jaraguari,MS,BR  
+3141,Campo Alegre de Goiás,GO,BR  
+8647,Delta,MG,BR  
+6862,Ipameri,GO,BR  
+6750,Uberaba,MG,BR  
+8256,Pedro Canário,ES,BR  
+8273,São Mateus,ES,BR  
+5990,São Mateus,RJ,BR  
+9008,São Mateus de Minas,MG,BR  
+8502,São Mateus do Maranhão,MA,BR  
+6198,São Mateus do Sul,PR,BR  
+8196,Aracruz,ES,BR  
+4663,Aldeia da Serra,SP,BR  
+3270,Amparo do Serra,MG,BR  
+4304,Araçoiaba da Serra,SP,BR  
+5093,Bom Jardim da Serra,SC,BR  
+7833,Bom Jesus da Serra,BA,BR  
+5564,Campestre da Serra,RS,BR  
+6774,Flor da Serra do Sul,PR,BR  
+8409,Formosa da Serra Negra,MA,BR  
+3825,Itapecerica da Serra,SP,BR  
+6637,Mauá da Serra,PR,BR  
+5746,Mirante da Serra,RO,BR  
+3712,Natividade da Serra,SP,BR  
+8892,Nova Serrana,MG,BR  
+3205,Pé de Serra,BA,BR  
+5328,Pinhal da Serra,RS,BR  
+4416,Planalto da Serra,MT,BR  
+4777,Ponte Serrada,SC,BR  
+3605,Redenção da Serra,SP,BR  
+3625,Rio Grande da Serra,SP,BR  
+5968,Santa Cruz da Serra,RJ,BR  
+3658,Santa Maria da Serra,SP,BR  
+8965,Santa Rosa da Serra,MG,BR  
+6510,São Jerônimo da Serra,PR,BR  
+6928,São João da Serra,PI,BR  
+3695,São Lourenço da Serra,SP,BR  
+5174,São Martinho da Serra,RS,BR  
+5992,São Pedro da Serra,RJ,BR  
+5179,São Pedro da Serra,RS,BR  
+8275,Serra,ES,BR  
+4861,Serra Alta,SC,BR  
+3488,Serra Azul,SP,BR  
+9035,Serra Azul de Minas,MG,BR  
+7225,Serra Branca,PB,BR  
+422941,Serra Caiada,RN,BR  
+7226,Serra da Raiz,PB,BR  
+9036,Serra da Saudade,MG,BR  
+5646,Serra de São Bento,RN,BR  
+3171,Serra do Cipó,MG,BR  
+5647,Serra do Mel,RN,BR  
+5914,Serra do Navio,AP,BR  
+7953,Serra do Ramalho,BA,BR  
+9037,Serra dos Aimorés,MG,BR  
+9038,Serra do Salitre,MG,BR  
+7954,Serra Dourada,BA,BR  
+7227,Serra Grande,PB,BR  
+3489,Serrana,SP,BR  
+3490,Serra Negra,SP,BR  
+5648,Serra Negra do Norte,RN,BR  
+9039,Serrania,MG,BR  
+8510,Serrano do Maranhão,MA,BR  
+8379,Serranópolis,GO,BR  
+9040,Serranópolis de Minas,MG,BR  
+6211,Serranópolis do Iguaçu,PR,BR  
+9041,Serranos,MG,BR  
+83470,Serra Nova Dourada,MT,BR  
+8276,Serra Pelada,ES,BR  
+7955,Serra Preta,BA,BR  
+7228,Serra Redonda,PB,BR  
+7229,Serraria,PB,BR  
+7166,Serra Talhada,PE,BR  
+3504,Taboão da Serra,SP,BR  
+7688,Tangará da Serra,MT,BR  
+5025,União da Serra,RS,BR  
+7247,Vista Serrana,PB,BR  
+8218,Guarapari,ES,BR  
+8204,Cachoeiro de Itapemirim,ES,BR  
+8230,Itapemirim,ES,BR  
+8246,Mimoso do Sul,ES,BR  
+6149,Niterói,RJ,BR  
+6105,Itaguaí,RJ,BR  
+6125,Magé,RJ,BR  
+6086,Guapimirim,RJ,BR  
+7738,Colônia Leopoldina,AL,BR  
+8814,Leopoldina,MG,BR  
+8266,Santa Leopoldina,ES,BR  
+6603,Laranjal,PR,BR  
+8808,Laranjal,MG,BR  
+5911,Laranjal do Jari,AP,BR  
+3899,Laranjal Paulista,SP,BR  
+8981,São Francisco do Glória,MG,BR  
+8993,São João do Manhuaçu,MG,BR  
+3425,Santa Bárbara do Leste,MG,BR  
+8739,Inhapim,MG,BR  
+8669,Engenheiro Caldas,MG,BR  
+6001,Seropédica,RJ,BR  
+6769,Fazenda Rio Grande,PR,BR  
+6906,Piedade do Rio Grande,MG,BR  
+5368,Rio Grande,RS,BR  
+3625,Rio Grande da Serra,SP,BR  
+6848,Rio Grande do Piauí,PI,BR  
+5375,Cristal,RS,BR  
+3364,Cristalândia,TO,BR  
+7027,Cristalândia do Piauí,PI,BR  
+8212,Cristal do Norte,ES,BR  
+5641,Cristal do Sul,RS,BR  
+4440,Cristalina,MS,BR  
+7534,Cristalina,GO,BR  
+5574,Canguçu,RS,BR  
+5580,Capão do Leão,RS,BR  
+5326,Pelotas,RS,BR  
+3566,Aliança do Tocantins,TO,BR  
+5797,Alvorada,RS,BR  
+3568,Alvorada,TO,BR  
+3269,Alvorada de Minas,MG,BR  
+5723,Alvorada d'Oeste,RO,BR  
+7194,Alvorada do Gurguéia,PI,BR  
+6970,Alvorada do Iguaçu,PR,BR  
+8296,Alvorada do Norte,GO,BR  
+6971,Alvorada do Sul,PR,BR  
+5277,Nova Alvorada,RS,BR  
+9090,Nova Alvorada do Sul,MS,BR  
+6209,Sede Alvorada,PR,BR  
+5396,Porangatu,GO,BR  
+4115,Estrela do Norte,SP,BR  
+4344,Estrela do Norte,GO,BR  
+4218,Campinorte,GO,BR  
+8320,Hidrolina,GO,BR  
+5657,Jaraguá,GO,BR  
+4967,Jaraguá do Sul,SC,BR  
+6239,Santa Rita do Novo Destino,GO,BR  
+2598,Corumbá de Goiás,GO,BR  
+6751,Uberlândia,MG,BR  
+2175,Monte Alegre de Minas,MG,BR  
+6539,Ituiutaba,MG,BR  
+2193,Santa Vitória,MG,BR  
+5144,Santa Vitória do Palmar,RS,BR  
+5663,Paranaiguara,GO,BR  
+3356,Cachoeira Alta,GO,BR  
+5658,Jataí,GO,BR  
+6996,Jacarezinho,PR,BR  
+6711,Carambeí,PR,BR  
+6589,Jaguariaíva,PR,BR  
+3127,Mundo Novo,BA,BR  
+8339,Mundo Novo,GO,BR  
+9088,Mundo Novo,MS,BR  
+7674,Itaquiraí,MS,BR  
+5699,Caarapó,MS,BR  
+9096,Rio Brilhante,MS,BR  
+6340,Campo Grande,RJ,BR  
+7732,Campo Grande,AL,BR  
+6760,Campo Grande,MS,BR  
+5802,Campo Grande,RN,BR  
+7007,Campo Grande do Piauí,PI,BR  
+4129,Jaraguari,MS,BR  
+9099,São Gabriel do Oeste,MS,BR  
+5298,Rio Verde de Mato Grosso,MS,BR  
+5376,Sonora,MS,BR  
+6161,Paraty,RJ,BR  
+6127,Mangaratiba,RJ,BR  
+4212,Guararema,SP,BR  
+4348,Arujá,SP,BR  
+4234,Guarujá,SP,BR  
+4933,Guarujá do Sul,SC,BR  
+3656,Santa Isabel,SP,BR  
+8367,Santa Isabel,GO,BR  
+6495,Santa Isabel do Ivaí,PR,BR  
+7500,Santa Isabel do Pará,PA,BR  
+6226,Santa Isabel do Rio Negro,AM,BR  
+6114,Itatiaia,RJ,BR  
+6367,Conceição de Jacareí,RJ,BR  
+3849,Jacareí,SP,BR  
+3777,Pindamonhangaba,SP,BR  
+6297,Barra do Piraí,RJ,BR  
+6158,Paraíba do Sul,RJ,BR  
+9083,Coronel Sapucaia,MS,BR  
+5997,Sapucaia,RJ,BR  
+7517,Sapucaia,PA,BR  
+5195,Sapucaia do Sul,RS,BR  
+3732,Onda Verde,SP,BR  
+3873,José Bonifácio,SP,BR  
+3906,Lins,SP,BR  
+5349,Porto Vera Cruz,RS,BR  
+7990,Vera Cruz,BA,BR  
+3555,Vera Cruz,SP,BR  
+5032,Vera Cruz,RS,BR  
+5717,Vera Cruz,RN,BR  
+6264,Vera Cruz do Oeste,PR,BR  
+4440,Cristalina,MS,BR  
+7534,Cristalina,GO,BR  
+6899,Conselheiro Lafaiete,MG,BR  
+7650,Barbacena,MG,BR  
+6902,Paracatu,MG,BR  
+7528,Alagoa Grande,PB,BR  
+7107,Lagoa Grande,PE,BR  
+8805,Lagoa Grande,MG,BR  
+6244,Lagoa Grande do Maranhão,MA,BR  
+8790,João Pinheiro,MG,BR  
+8985,São Gonçalo do Abaeté,MG,BR  
+8684,Felixlândia,MG,BR  
+8645,Curvelo,MG,BR  
+8578,Capim Branco,MG,BR  
+8748,Itabirito,MG,BR  
+6670,Balsa Nova,PR,BR  
+6406,Porto Amazonas,PR,BR  
+7622,Guiratinga,MT,BR  
+4954,Irati,SC,BR  
+6994,Irati,PR,BR  
+3386,Itapiratins,TO,BR  
+3881,Juquiratiba,SP,BR  
+5337,Piratini,RS,BR  
+3790,Piratininga,SP,BR  
+3513,Tapiratiba,SP,BR  
+3472,Tupiratins,TO,BR  
+6570,Imbituva,PR,BR  
+7549,Bom Jesus da Lapa,BA,BR  
+6602,Lapa,PR,BR  
+9000,São José da Lapa,MG,BR  
+6756,Virgem da Lapa,MG,BR  
+7958,Simões Filho,BA,BR  
+3046,Amélia Rodrigues,BA,BR  
+4095,Rafael Jambeiro,BA,BR  
+7837,Brejões,BA,BR  
+6428,Jequié,BA,BR  
+4025,Novo Planalto,GO,BR  
+3793,Planalto,SP,BR  
+3355,Planalto,BA,BR  
+5338,Planalto,RS,BR  
+6400,Planalto,PR,BR  
+4773,Planalto Alegre,SC,BR  
+4416,Planalto da Serra,MT,BR  
+5149,Santo Antônio do Planalto,RS,BR  
+7568,Vitória da Conquista,BA,BR  
+4072,Cláudia,MT,BR  
+7690,Terra Nova do Norte,MT,BR  
+4197,Trairão,PA,BR  
+3875,Guia Lopes da Laguna,MS,BR  
+4976,Laguna,SC,BR  
+9087,Laguna Carapã,MS,BR  
+4881,Tubarão,SC,BR  
+4990,Maracajá,SC,BR  
+4847,São João do Sul,SC,BR  
+5009,Três Cachoeiras,RS,BR  
+5264,Montenegro,RS,BR  
+5321,Paverama,RS,BR  
+5432,Fontoura Xavier,RS,BR  
+5038,Victor Graeff,RS,BR  
+5146,Santo Antônio da Patrulha,RS,BR  
+5448,Gravataí,RS,BR  

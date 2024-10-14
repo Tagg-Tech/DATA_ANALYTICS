@@ -1,0 +1,161 @@
+id,name,state,country
+3928,Mairiporã,SP,BR  
+3553,Vargem,SP,BR   
+3178,Cambuí,MG,BR  
+8989,São Gonçalo do Sapucaí,MG,BR  
+6895,Carmo da Cachoeira,MG,BR  
+8966,Santo Antônio do Amparo,MG,BR  
+8588,Carmópolis de Minas,MG,BR  
+8762,Itatiaiuçu,MG,BR  
+6363,Casimiro de Abreu,RJ,BR  
+6356,Campos dos Goytacazes,RJ,BR  
+5955,Rio Bonito,RJ,BR  
+5980,São Gonçalo,RJ,BR  
+6551,São José dos Pinhais,PR,BR  
+4923,Garuva,SC,BR  
+5068,Araquari,SC,BR  
+4778,Porto Belo,SC,BR  
+4756,Palhoça,SC,BR  
+4896,Correia Pinto,SC,BR  
+6769,Fazenda Rio Grande,PR,BR
+5000,Monte Castelo,SC,BR
+6481,Rio Negro,PR,BR
+4829,Santa Cecília,SC,BR  
+3695,São Lourenço da Serra,SP,BR  
+3960,Miracatu,SP,BR  
+3880,Juquiá,SP,BR  
+4451,Cajati,SP,BR  
+4365,Barra do Turvo,SP,BR  
+6700,Campina Grande do Sul,PR,BR  
+8292,Alexânia,GO,BR  
+3156,Perdizes,MG,BR  
+7654,Conceição das Alagoas,MG,BR  
+3247,Goianápolis,GO,BR  
+3181,Piracanjuba,GO,BR  
+7537,Itumbiara,GO,BR  
+3225,Prata,MG,BR
+8699,Fronteira,MG,BR
+7657,Florestal,MG,BR
+8821,Luz,MG,BR
+5678,Campos Altos,MG,BR  
+6073,Duque de Caxias,RJ,BR
+6286,Areal,RJ,BR
+9044,Simão Pereira,MG,BR  
+7603,Campo Verde,MT,BR  
+7623,Itiquira,MT,BR  
+7664,Rondonópolis,MT,BR  
+7615,Cuiabá,MT,BR  
+7625,Jangada,MT,BR  
+7632,Nobres,MT,BR  
+7637,Nova Mutum,MT,BR  
+7629,Lucas do Rio Verde,MT,BR  
+7687,Sorriso,MT,BR  
+8539,Araguari,MG,BR
+3141,Campo Alegre de Goiás,GO,BR  
+8647,Delta,MG,BR  
+6862,Ipameri,GO,BR  
+6750,Uberaba,MG,BR  
+8256,Pedro Canário,ES,BR  
+8273,São Mateus,ES,BR  
+8196,Aracruz,ES,BR  
+8275,Serra,ES,BR  
+8218,Guarapari,ES,BR  
+8230,Itapemirim,ES,BR  
+8246,Mimoso do Sul,ES,BR  
+6149,Niterói,RJ,BR  
+6105,Itaguaí,RJ,BR  
+6125,Magé,RJ,BR  
+6086,Guapimirim,RJ,BR 
+8814,Leopoldina,MG,BR
+8808,Laranjal,MG,BR
+8981,São Francisco do Glória,MG,BR  
+8993,São João do Manhuaçu,MG,BR  
+3425,Santa Bárbara do Leste,MG,BR  
+8739,Inhapim,MG,BR  
+8669,Engenheiro Caldas,MG,BR  
+6001,Seropédica,RJ,BR  
+5368,Rio Grande,RS,BR
+5375,Cristal,RS,BR  
+5574,Canguçu,RS,BR
+5580,Capão do Leão,RS,BR  
+5326,Pelotas,RS,BR  
+3566,Aliança do Tocantins,TO,BR 
+3568,Alvorada,TO,BR 
+5396,Porangatu,GO,BR 
+4344,Estrela do Norte,GO,BR  
+4218,Campinorte,GO,BR  
+8320,Hidrolina,GO,BR  
+5657,Jaraguá,GO,BR 
+6239,Santa Rita do Novo Destino,GO,BR  
+2598,Corumbá de Goiás,GO,BR  
+6751,Uberlândia,MG,BR  
+2175,Monte Alegre de Minas,MG,BR  
+6539,Ituiutaba,MG,BR  
+2193,Santa Vitória,MG,BR
+5663,Paranaiguara,GO,BR  
+3356,Cachoeira Alta,GO,BR  
+5658,Jataí,GO,BR  
+6996,Jacarezinho,PR,BR  
+6711,Carambeí,PR,BR  
+6589,Jaguariaíva,PR,BR  
+9088,Mundo Novo,MS,BR  
+7674,Itaquiraí,MS,BR  
+5699,Caarapó,MS,BR  
+9096,Rio Brilhante,MS,BR  
+6760,Campo Grande,MS,BR   
+4129,Jaraguari,MS,BR  
+9099,São Gabriel do Oeste,MS,BR  
+5298,Rio Verde de Mato Grosso,MS,BR  
+5376,Sonora,MS,BR  
+6161,Paraty,RJ,BR  
+6127,Mangaratiba,RJ,BR  
+4212,Guararema,SP,BR  
+4348,Arujá,SP,BR
+3656,Santa Isabel,SP,BR  
+6114,Itatiaia,RJ,BR 
+3849,Jacareí,SP,BR  
+3777,Pindamonhangaba,SP,BR  
+6297,Barra do Piraí,RJ,BR  
+6158,Paraíba do Sul,RJ,BR
+5997,Sapucaia,RJ,BR
+3732,Onda Verde,SP,BR  
+3873,José Bonifácio,SP,BR  
+3906,Lins,SP,BR 
+3555,Vera Cruz,SP,BR  
+7534,Cristalina,GO,BR  
+6899,Conselheiro Lafaiete,MG,BR  
+7650,Barbacena,MG,BR  
+6902,Paracatu,MG,BR   
+8805,Lagoa Grande,MG,BR
+8790,João Pinheiro,MG,BR  
+8985,São Gonçalo do Abaeté,MG,BR  
+8684,Felixlândia,MG,BR  
+8645,Curvelo,MG,BR  
+8578,Capim Branco,MG,BR  
+8748,Itabirito,MG,BR  
+6670,Balsa Nova,PR,BR  
+6406,Porto Amazonas,PR,BR
+6994,Irati,PR,BR  
+6570,Imbituva,PR,BR 
+6602,Lapa,PR,BR  
+7958,Simões Filho,BA,BR  
+3046,Amélia Rodrigues,BA,BR  
+4095,Rafael Jambeiro,BA,BR  
+7837,Brejões,BA,BR  
+6428,Jequié,BA,BR
+3355,Planalto,BA,BR 
+7568,Vitória da Conquista,BA,BR  
+4072,Cláudia,MT,BR  
+7690,Terra Nova do Norte,MT,BR  
+4197,Trairão,PA,BR
+4976,Laguna,SC,BR
+4881,Tubarão,SC,BR  
+4990,Maracajá,SC,BR  
+4847,São João do Sul,SC,BR  
+5009,Três Cachoeiras,RS,BR  
+5264,Montenegro,RS,BR  
+5321,Paverama,RS,BR  
+5432,Fontoura Xavier,RS,BR  
+5038,Victor Graeff,RS,BR  
+5146,Santo Antônio da Patrulha,RS,BR  
+5448,Gravataí,RS,BR  

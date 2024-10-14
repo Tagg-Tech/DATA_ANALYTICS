@@ -1,0 +1,320 @@
+[{'id': 3928, 'name': 'Mairiporã', 'state': 'SP', 'country': 'BR  '}]
+1
+[{'id': 8950, 'name': 'Santana da Vargem', 'state': 'MG', 'country': 'BR  '}, {'id': 9012, 'name': 'São Sebastião da Vargem Alegre', 'state': 'MG', 'country': 'BR  '}, {'id': 3553, 'name': 'Vargem', 'state': 'SP', 'country': 'BR  '}, {'id': 4484, 'name': 'Vargem', 'state': 'SC', 'country': 'BR  '}, {'id': 9066, 'name': 'Vargem Alegre', 'state': 'MG', 'country': 'BR  '}, {'id': 4717, 'name': 'Vargem Alegre', 'state': 'RJ', 'country': 'BR  '}, {'id': 8278, 'name': 'Vargem Alta', 'state': 'ES', 'country': 'BR  '}, {'id': 4483, 'name': 'Vargem Bonita', 'state': 'SC', 'country': 'BR  '}, {'id': 9067, 'name': 'Vargem Bonita', 'state': 'MG', 'country': 'BR  '}, {'id': 6026, 'name': 'Vargem Grande', 'state': 'RJ', 'country': 'BR  '}, {'id': 8524, 'name': 'Vargem Grande', 'state': 'MA', 'country': 'BR  '}, {'id': 9068, 'name': 'Vargem Grande do Rio Pardo', 'state': 'MG', 'country': 'BR  '}, {'id': 3551, 'name': 'Vargem Grande do Sul', 'state': 'SP', 'country': 'BR  '}, {'id': 3552, 'name': 'Vargem Grande Paulista', 'state': 'SP', 'country': 'BR  '}]
+2
+[{'id': 3178, 'name': 'Cambuí', 'state': 'MG', 'country': 'BR  '}]
+3
+[{'id': 8989, 'name': 'São Gonçalo do Sapucaí', 'state': 'MG', 'country': 'BR  '}]
+4
+[{'id': 6895, 'name': 'Carmo da Cachoeira', 'state': 'MG', 'country': 'BR  '}]
+5
+[{'id': 8966, 'name': 'Santo Antônio do Amparo', 'state': 'MG', 'country': 'BR  '}]
+6
+[{'id': 8588, 'name': 'Carmópolis de Minas', 'state': 'MG', 'country': 'BR  '}]
+7
+[{'id': 8762, 'name': 'Itatiaiuçu', 'state': 'MG', 'country': 'BR  '}]
+8
+[{'id': 6363, 'name': 'Casimiro de Abreu', 'state': 'RJ', 'country': 'BR  '}]
+9
+[{'id': 6356, 'name': 'Campos dos Goytacazes', 'state': 'RJ', 'country': 'BR  '}]
+10
+[{'id': 5955, 'name': 'Rio Bonito', 'state': 'RJ', 'country': 'BR  '}, {'id': 6477, 'name': 'Rio Bonito do Iguaçu', 'state': 'PR', 'country': 'BR  '}]
+11
+[{'id': 5980, 'name': 'São Gonçalo', 'state': 'RJ', 'country': 'BR  '}, {'id': 7439, 'name': 'São Gonçalo', 'state': 'PB', 'country': 'BR  '}, {'id': 8985, 'name': 'São Gonçalo do Abaeté', 'state': 'MG', 'country': 'BR  '}, {'id': 5938, 'name': 'São Gonçalo do Amarante', 'state': 'RN', 'country': 'BR  '}, {'id': 8149, 'name': 'São Gonçalo do Amarante', 'state': 'CE', 'country': 'BR  '}, {'id': 6886, 'name': 'São Gonçalo do Gurguéia', 'state': 'PI', 'country': 'BR  '}, {'id': 8986, 'name': 'São Gonçalo do Pará', 'state': 'MG', 'country': 'BR  '}, {'id': 6925, 'name': 'São Gonçalo do Piauí', 'state': 'PI', 'country': 'BR  '}, {'id': 8987, 'name': 'São Gonçalo do Rio Abaixo', 'state': 'MG', 'country': 'BR  '}, {'id': 4437, 'name': 'São Gonçalo do Rio das Pedras', 'state': 'MG', 'country': 'BR  '}, {'id': 8988, 'name': 'São Gonçalo do Rio Preto', 'state': 'MG', 'country': 'BR  '}, {'id': 8989, 'name': 'São Gonçalo do Sapucaí', 'state': 'MG', 'country': 'BR  '}, {'id': 3930, 'name': 'São Gonçalo dos Campos', 'state': 'BA', 'country': 'BR  '}]
+12
+[{'id': 6551, 'name': 'São José dos Pinhais', 'state': 'PR', 'country': 'BR  '}]
+13
+[{'id': 4923, 'name': 'Garuva', 'state': 'SC', 'country': 'BR  '}]
+14
+[{'id': 5068, 'name': 'Araquari', 'state': 'SC', 'country': 'BR  '}]
+15
+[{'id': 4778, 'name': 'Porto Belo', 'state': 'SC', 'country': 'BR  '}]
+16
+[{'id': 4756, 'name': 'Palhoça', 'state': 'SC', 'country': 'BR  '}]
+17
+[{'id': 4896, 'name': 'Correia Pinto', 'state': 'SC', 'country': 'BR  '}]
+18
+[{'id': 6769, 'name': 'Fazenda Rio Grande', 'state': 'PR', 'country': 'BR  '}]
+19
+[{'id': 3702, 'name': 'Monte Castelo', 'state': 'SP', 'country': 'BR  '}, {'id': 5000, 'name': 'Monte Castelo', 'state': 'SC', 'country': 'BR  '}, {'id': 6491, 'name': 'Santa Cruz de Monte Castelo', 'state': 'PR', 'country': 'BR  '}]
+20
+[{'id': 3571, 'name': 'Aparecida do Rio Negro', 'state': 'TO', 'country': 'BR  '}, {'id': 5504, 'name': 'Rio Negro', 'state': 'MS', 'country': 'BR  '}, {'id': 6481, 'name': 'Rio Negro', 'state': 'PR', 'country': 'BR  '}, {'id': 6226, 'name': 'Santa Isabel do Rio Negro', 'state': 'AM', 'country': 'BR  '}]
+21
+[{'id': 4829, 'name': 'Santa Cecília', 'state': 'SC', 'country': 'BR  '}, {'id': 7425, 'name': 'Santa Cecília', 'state': 'PB', 'country': 'BR  '}, {'id': 6490, 'name': 'Santa Cecília do Pavão', 'state': 'PR', 'country': 'BR  '}, {'id': 5134, 'name': 'Santa Cecília do Sul', 'state': 'RS', 'country': 'BR  '}]
+22
+[{'id': 3695, 'name': 'São Lourenço da Serra', 'state': 'SP', 'country': 'BR  '}]
+23
+[{'id': 3960, 'name': 'Miracatu', 'state': 'SP', 'country': 'BR  '}]
+24
+[{'id': 3880, 'name': 'Juquiá', 'state': 'SP', 'country': 'BR  '}]
+25
+[{'id': 4451, 'name': 'Cajati', 'state': 'SP', 'country': 'BR  '}]
+26
+[{'id': 4365, 'name': 'Barra do Turvo', 'state': 'SP', 'country': 'BR  '}]
+27
+[{'id': 6700, 'name': 'Campina Grande do Sul', 'state': 'PR', 'country': 'BR  '}]
+28
+[{'id': 8292, 'name': 'Alexânia', 'state': 'GO', 'country': 'BR  '}]
+29
+[{'id': 3156, 'name': 'Perdizes', 'state': 'MG', 'country': 'BR  '}]
+30
+[{'id': 7654, 'name': 'Conceição das Alagoas', 'state': 'MG', 'country': 'BR  '}]
+31
+[{'id': 3247, 'name': 'Goianápolis', 'state': 'GO', 'country': 'BR  '}]
+32
+[{'id': 3181, 'name': 'Piracanjuba', 'state': 'GO', 'country': 'BR  '}]
+33
+[{'id': 7537, 'name': 'Itumbiara', 'state': 'GO', 'country': 'BR  '}]
+34
+[{'id': 4657, 'name': 'Águas da Prata', 'state': 'SP', 'country': 'BR  '}, {'id': 8563, 'name': 'Cachoeira da Prata', 'state': 'MG', 'country': 'BR  '}, {'id': 6371, 'name': 'Córrego da Prata', 'state': 'RJ', 'country': 'BR  '}, {'id': 5682, 'name': 'Lagoa da Prata', 'state': 'MG', 'country': 'BR  '}, {'id': 5288, 'name': 'Nova Prata', 'state': 'RS', 'country': 'BR  '}, {'id': 6657, 'name': 'Nova Prata do Iguaçu', 'state': 'PR', 'country': 'BR  '}, {'id': 7412, 'name': 'Prata', 'state': 'PB', 'country': 'BR  '}, {'id': 3225, 'name': 'Prata', 'state': 'MG', 'country': 'BR  '}, {'id': 6842, 'name': 'Prata do Piauí', 'state': 'PI', 'country': 'BR  '}, {'id': 8977, 'name': 'São Domingos do Prata', 'state': 'MG', 'country': 'BR  '}, {'id': 5043, 'name': 'Vista Alegre do Prata', 'state': 'RS', 'country': 'BR  '}]
+35
+[{'id': 8699, 'name': 'Fronteira', 'state': 'MG', 'country': 'BR  '}, {'id': 8698, 'name': 'Fronteira dos Vales', 'state': 'MG', 'country': 'BR  '}, {'id': 7049, 'name': 'Fronteiras', 'state': 'PI', 'country': 'BR  '}, {'id': 6927, 'name': 'São João da Fronteira', 'state': 'PI', 'country': 'BR  '}, {'id': 3533, 'name': 'Três Fronteiras', 'state': 'SP', 'country': 'BR  '}]
+36
+[{'id': 7657, 'name': 'Florestal', 'state': 'MG', 'country': 'BR  '}]
+37
+[{'id': 5050, 'name': 'Abelardo Luz', 'state': 'SC', 'country': 'BR  '}, {'id': 8821, 'name': 'Luz', 'state': 'MG', 'country': 'BR  '}, {'id': 4985, 'name': 'Luzerna', 'state': 'SC', 'country': 'BR  '}, {'id': 7538, 'name': 'Luziânia', 'state': 'GO', 'country': 'BR  '}, {'id': 7079, 'name': 'Luzilândia', 'state': 'PI', 'country': 'BR  '}, {'id': 3401, 'name': 'Luzinópolis', 'state': 'TO', 'country': 'BR  '}, {'id': 3217, 'name': 'Mariluz', 'state': 'PR', 'country': 'BR  '}, {'id': 3726, 'name': 'Nova Luzitânia', 'state': 'SP', 'country': 'BR  '}, {'id': 3601, 'name': 'Queluz', 'state': 'SP', 'country': 'BR  '}, {'id': 7374, 'name': 'Queluzito', 'state': 'MG', 'country': 'BR  '}, {'id': 3192, 'name': 'Santaluz', 'state': 'BA', 'country': 'BR  '}, {'id': 6852, 'name': 'Santa Luz', 'state': 'PI', 'country': 'BR  '}, {'id': 6919, 'name': 'Santa Luzia', 'state': 'MG', 'country': 'BR  '}, {'id': 8481, 'name': 'Santa Luzia', 'state': 'MA', 'country': 'BR  '}, {'id': 7428, 'name': 'Santa Luzia', 'state': 'PB', 'country': 'BR  '}, {'id': 7934, 'name': 'Santa Luzia', 'state': 'BA', 'country': 'BR  '}, {'id': 5762, 'name': "Santa Luzia d'Oeste", 'state': 'RO', 'country': 'BR  '}, {'id': 4589, 'name': 'Santa Luzia do Itanhy', 'state': 'SE', 'country': 'BR  '}, {'id': 4595, 'name': 'Santa Luzia do Norte', 'state': 'AL', 'country': 'BR  '}, {'id': 7501, 'name': 'Santa Luzia do Pará', 'state': 'PA', 'country': 'BR  '}, {'id': 8480, 'name': 'Santa Luzia do Paruá', 'state': 'MA', 'country': 'BR  '}]
+38
+[{'id': 5678, 'name': 'Campos Altos', 'state': 'MG', 'country': 'BR  '}]
+39
+[{'id': 6073, 'name': 'Duque de Caxias', 'state': 'RJ', 'country': 'BR  '}]
+40
+[{'id': 6286, 'name': 'Areal', 'state': 'RJ', 'country': 'BR  '}, {'id': 4315, 'name': 'Arealva', 'state': 'SP', 'country': 'BR  '}]
+41
+[{'id': 9044, 'name': 'Simão Pereira', 'state': 'MG', 'country': 'BR  '}]
+42
+[{'id': 7603, 'name': 'Campo Verde', 'state': 'MT', 'country': 'BR  '}]
+43
+[{'id': 7623, 'name': 'Itiquira', 'state': 'MT', 'country': 'BR  '}]
+44
+[{'id': 7664, 'name': 'Rondonópolis', 'state': 'MT', 'country': 'BR  '}]
+45
+[{'id': 7615, 'name': 'Cuiabá', 'state': 'MT', 'country': 'BR  '}]
+46
+[{'id': 7625, 'name': 'Jangada', 'state': 'MT', 'country': 'BR  '}]
+47
+[{'id': 7632, 'name': 'Nobres', 'state': 'MT', 'country': 'BR  '}]
+48
+[{'id': 7637, 'name': 'Nova Mutum', 'state': 'MT', 'country': 'BR  '}]
+49
+[{'id': 7629, 'name': 'Lucas do Rio Verde', 'state': 'MT', 'country': 'BR  '}]
+50
+[{'id': 7687, 'name': 'Sorriso', 'state': 'MT', 'country': 'BR  '}]
+51
+[{'id': 8539, 'name': 'Araguari', 'state': 'MG', 'country': 'BR  '}, {'id': 4129, 'name': 'Jaraguari', 'state': 'MS', 'country': 'BR  '}]
+52
+[{'id': 3141, 'name': 'Campo Alegre de Goiás', 'state': 'GO', 'country': 'BR  '}]
+53
+[{'id': 8647, 'name': 'Delta', 'state': 'MG', 'country': 'BR  '}]
+54
+[{'id': 6862, 'name': 'Ipameri', 'state': 'GO', 'country': 'BR  '}]
+55
+[{'id': 6750, 'name': 'Uberaba', 'state': 'MG', 'country': 'BR  '}]
+56
+[{'id': 8256, 'name': 'Pedro Canário', 'state': 'ES', 'country': 'BR  '}]
+57
+[{'id': 8273, 'name': 'São Mateus', 'state': 'ES', 'country': 'BR  '}, {'id': 5990, 'name': 'São Mateus', 'state': 'RJ', 'country': 'BR  '}, {'id': 9008, 'name': 'São Mateus de Minas', 'state': 'MG', 'country': 'BR  '}, {'id': 8502, 'name': 'São Mateus do Maranhão', 'state': 'MA', 'country': 'BR  '}, {'id': 6198, 'name': 'São Mateus do Sul', 'state': 'PR', 'country': 'BR  '}]
+58
+[{'id': 8196, 'name': 'Aracruz', 'state': 'ES', 'country': 'BR  '}]
+59
+[{'id': 4663, 'name': 'Aldeia da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 3270, 'name': 'Amparo do Serra', 'state': 'MG', 'country': 'BR  '}, {'id': 4304, 'name': 'Araçoiaba da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 5093, 'name': 'Bom Jardim da Serra', 'state': 'SC', 'country': 'BR  '}, {'id': 7833, 'name': 'Bom Jesus da Serra', 'state': 'BA', 'country': 'BR  '}, {'id': 5564, 'name': 'Campestre da Serra', 'state': 'RS', 'country': 'BR  '}, {'id': 6774, 'name': 'Flor da Serra do Sul', 'state': 'PR', 'country': 'BR  '}, {'id': 8409, 'name': 'Formosa da Serra Negra', 'state': 'MA', 'country': 'BR  '}, {'id': 3825, 'name': 'Itapecerica da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 6637, 'name': 'Mauá da Serra', 'state': 'PR', 'country': 'BR  '}, {'id': 5746, 'name': 'Mirante da Serra', 'state': 'RO', 'country': 'BR  '}, {'id': 3712, 'name': 'Natividade da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 8892, 'name': 'Nova Serrana', 'state': 'MG', 'country': 'BR  '}, {'id': 3205, 'name': 'Pé de Serra', 'state': 'BA', 'country': 'BR  '}, {'id': 5328, 'name': 'Pinhal da Serra', 'state': 'RS', 'country': 'BR  '}, {'id': 4416, 'name': 'Planalto da Serra', 'state': 'MT', 'country': 'BR  '}, {'id': 4777, 'name': 'Ponte Serrada', 'state': 'SC', 'country': 'BR  '}, {'id': 3605, 'name': 'Redenção da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 3625, 'name': 'Rio Grande da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 5968, 'name': 'Santa Cruz da Serra', 'state': 'RJ', 'country': 'BR  '}, {'id': 3658, 'name': 'Santa Maria da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 8965, 'name': 'Santa Rosa da Serra', 'state': 'MG', 'country': 'BR  '}, {'id': 6510, 'name': 'São Jerônimo da Serra', 'state': 'PR', 'country': 'BR  '}, {'id': 6928, 'name': 'São João da Serra', 'state': 'PI', 'country': 'BR  '}, {'id': 3695, 'name': 'São Lourenço da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 5174, 'name': 'São Martinho da Serra', 'state': 'RS', 'country': 'BR  '}, {'id': 5992, 'name': 'São Pedro da Serra', 'state': 'RJ', 'country': 'BR  '}, {'id': 5179, 'name': 'São Pedro da Serra', 'state': 'RS', 'country': 'BR  '}, {'id': 8275, 'name': 'Serra', 'state': 'ES', 'country': 'BR  '}, {'id': 4861, 'name': 'Serra Alta', 'state': 'SC', 'country': 'BR  '}, {'id': 3488, 'name': 'Serra Azul', 'state': 'SP', 'country': 'BR  '}, {'id': 9035, 'name': 'Serra Azul de Minas', 'state': 'MG', 'country': 'BR  '}, {'id': 7225, 'name': 'Serra Branca', 'state': 'PB', 'country': 'BR  '}, {'id': 422941, 'name': 'Serra Caiada', 'state': 'RN', 'country': 'BR  '}, {'id': 7226, 'name': 'Serra da Raiz', 'state': 'PB', 'country': 'BR  '}, {'id': 9036, 'name': 'Serra da Saudade', 'state': 'MG', 'country': 'BR  '}, {'id': 5646, 'name': 'Serra de São Bento', 'state': 'RN', 'country': 'BR  '}, {'id': 3171, 'name': 'Serra do Cipó', 'state': 'MG', 'country': 'BR  '}, {'id': 5647, 'name': 'Serra do Mel', 'state': 'RN', 'country': 'BR  '}, {'id': 5914, 'name': 'Serra do Navio', 'state': 'AP', 'country': 'BR  '}, {'id': 7953, 'name': 'Serra do Ramalho', 'state': 'BA', 'country': 'BR  '}, {'id': 9037, 'name': 'Serra dos Aimorés', 'state': 'MG', 'country': 'BR  '}, {'id': 9038, 'name': 'Serra do Salitre', 'state': 'MG', 'country': 'BR  '}, {'id': 7954, 'name': 'Serra Dourada', 'state': 'BA', 'country': 'BR  '}, {'id': 7227, 'name': 'Serra Grande', 'state': 'PB', 'country': 'BR  '}, {'id': 3489, 'name': 'Serrana', 'state': 'SP', 'country': 'BR  '}, {'id': 3490, 'name': 'Serra Negra', 'state': 'SP', 'country': 'BR  '}, {'id': 5648, 'name': 'Serra Negra do Norte', 'state': 'RN', 'country': 'BR  '}, {'id': 9039, 'name': 'Serrania', 'state': 'MG', 'country': 'BR  '}, {'id': 8510, 'name': 'Serrano do Maranhão', 'state': 'MA', 'country': 'BR  '}, {'id': 8379, 'name': 'Serranópolis', 'state': 'GO', 'country': 'BR  '}, {'id': 9040, 'name': 'Serranópolis de Minas', 'state': 'MG', 'country': 'BR  '}, {'id': 6211, 'name': 'Serranópolis do Iguaçu', 'state': 'PR', 'country': 'BR  '}, {'id': 9041, 'name': 'Serranos', 'state': 'MG', 'country': 'BR  '}, {'id': 83470, 'name': 'Serra Nova Dourada', 'state': 'MT', 'country': 'BR  '}, {'id': 8276, 'name': 'Serra Pelada', 'state': 'ES', 'country': 'BR  '}, {'id': 7955, 'name': 'Serra Preta', 'state': 'BA', 'country': 'BR  '}, {'id': 7228, 'name': 'Serra Redonda', 'state': 'PB', 'country': 'BR  '}, {'id': 7229, 'name': 'Serraria', 'state': 'PB', 'country': 'BR  '}, {'id': 7166, 'name': 'Serra Talhada', 'state': 'PE', 'country': 'BR  '}, {'id': 3504, 'name': 'Taboão da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 7688, 'name': 'Tangará da Serra', 'state': 'MT', 'country': 'BR  '}, {'id': 5025, 'name': 'União da Serra', 'state': 'RS', 'country': 'BR  '}, {'id': 7247, 'name': 'Vista Serrana', 'state': 'PB', 'country': 'BR  '}]
+60
+[{'id': 8218, 'name': 'Guarapari', 'state': 'ES', 'country': 'BR  '}]
+61
+[{'id': 8204, 'name': 'Cachoeiro de Itapemirim', 'state': 'ES', 'country': 'BR  '}, {'id': 8230, 'name': 'Itapemirim', 'state': 'ES', 'country': 'BR  '}]
+62
+[{'id': 8246, 'name': 'Mimoso do Sul', 'state': 'ES', 'country': 'BR  '}]
+63
+[{'id': 6149, 'name': 'Niterói', 'state': 'RJ', 'country': 'BR  '}]
+64
+[{'id': 6105, 'name': 'Itaguaí', 'state': 'RJ', 'country': 'BR  '}]
+65
+[{'id': 6125, 'name': 'Magé', 'state': 'RJ', 'country': 'BR  '}]
+66
+[{'id': 6086, 'name': 'Guapimirim', 'state': 'RJ', 'country': 'BR  '}]
+67
+[{'id': 7738, 'name': 'Colônia Leopoldina', 'state': 'AL', 'country': 'BR  '}, {'id': 8814, 'name': 'Leopoldina', 'state': 'MG', 'country': 'BR  '}, {'id': 8266, 'name': 'Santa Leopoldina', 'state': 'ES', 'country': 'BR  '}]
+68
+[{'id': 6603, 'name': 'Laranjal', 'state': 'PR', 'country': 'BR  '}, {'id': 8808, 'name': 'Laranjal', 'state': 'MG', 'country': 'BR  '}, {'id': 5911, 'name': 'Laranjal do Jari', 'state': 'AP', 'country': 'BR  '}, {'id': 3899, 'name': 'Laranjal Paulista', 'state': 'SP', 'country': 'BR  '}]
+69
+[{'id': 8981, 'name': 'São Francisco do Glória', 'state': 'MG', 'country': 'BR  '}]
+70
+[{'id': 8993, 'name': 'São João do Manhuaçu', 'state': 'MG', 'country': 'BR  '}]
+71
+[{'id': 3425, 'name': 'Santa Bárbara do Leste', 'state': 'MG', 'country': 'BR  '}]
+72
+[{'id': 8739, 'name': 'Inhapim', 'state': 'MG', 'country': 'BR  '}]
+73
+[{'id': 8669, 'name': 'Engenheiro Caldas', 'state': 'MG', 'country': 'BR  '}]
+74
+[{'id': 6001, 'name': 'Seropédica', 'state': 'RJ', 'country': 'BR  '}]
+75
+[{'id': 6769, 'name': 'Fazenda Rio Grande', 'state': 'PR', 'country': 'BR  '}, {'id': 6906, 'name': 'Piedade do Rio Grande', 'state': 'MG', 'country': 'BR  '}, {'id': 5368, 'name': 'Rio Grande', 'state': 'RS', 'country': 'BR  '}, {'id': 3625, 'name': 'Rio Grande da Serra', 'state': 'SP', 'country': 'BR  '}, {'id': 6848, 'name': 'Rio Grande do Piauí', 'state': 'PI', 'country': 'BR  '}]
+76
+[{'id': 5375, 'name': 'Cristal', 'state': 'RS', 'country': 'BR  '}, {'id': 3364, 'name': 'Cristalândia', 'state': 'TO', 'country': 'BR  '}, {'id': 7027, 'name': 'Cristalândia do Piauí', 'state': 'PI', 'country': 'BR  '}, {'id': 8212, 'name': 'Cristal do Norte', 'state': 'ES', 'country': 'BR  '}, {'id': 5641, 'name': 'Cristal do Sul', 'state': 'RS', 'country': 'BR  '}, {'id': 4440, 'name': 'Cristalina', 'state': 'MS', 'country': 'BR  '}, {'id': 7534, 'name': 'Cristalina', 'state': 'GO', 'country': 'BR  '}]
+77
+[{'id': 5574, 'name': 'Canguçu', 'state': 'RS', 'country': 'BR  '}]
+78
+[{'id': 5580, 'name': 'Capão do Leão', 'state': 'RS', 'country': 'BR  '}]
+79
+[{'id': 5326, 'name': 'Pelotas', 'state': 'RS', 'country': 'BR  '}]
+80
+[{'id': 3566, 'name': 'Aliança do Tocantins', 'state': 'TO', 'country': 'BR  '}]
+81
+[{'id': 5797, 'name': 'Alvorada', 'state': 'RS', 'country': 'BR  '}, {'id': 3568, 'name': 'Alvorada', 'state': 'TO', 'country': 'BR  '}, {'id': 3269, 'name': 'Alvorada de Minas', 'state': 'MG', 'country': 'BR  '}, {'id': 5723, 'name': "Alvorada d'Oeste", 'state': 'RO', 'country': 'BR  '}, {'id': 7194, 'name': 'Alvorada do Gurguéia', 'state': 'PI', 'country': 'BR  '}, {'id': 6970, 'name': 'Alvorada do Iguaçu', 'state': 'PR', 'country': 'BR  '}, {'id': 8296, 'name': 'Alvorada do Norte', 'state': 'GO', 'country': 'BR  '}, {'id': 6971, 'name': 'Alvorada do Sul', 'state': 'PR', 'country': 'BR  '}, {'id': 5277, 'name': 'Nova Alvorada', 'state': 'RS', 'country': 'BR  '}, {'id': 9090, 'name': 'Nova Alvorada do Sul', 'state': 'MS', 'country': 'BR  '}, {'id': 6209, 'name': 'Sede Alvorada', 'state': 'PR', 'country': 'BR  '}]
+82
+[{'id': 5396, 'name': 'Porangatu', 'state': 'GO', 'country': 'BR  '}]
+83
+[{'id': 4115, 'name': 'Estrela do Norte', 'state': 'SP', 'country': 'BR  '}, {'id': 4344, 'name': 'Estrela do Norte', 'state': 'GO', 'country': 'BR  '}]
+84
+[{'id': 4218, 'name': 'Campinorte', 'state': 'GO', 'country': 'BR  '}]
+85
+[{'id': 8320, 'name': 'Hidrolina', 'state': 'GO', 'country': 'BR  '}]
+86
+[{'id': 5657, 'name': 'Jaraguá', 'state': 'GO', 'country': 'BR  '}, {'id': 4967, 'name': 'Jaraguá do Sul', 'state': 'SC', 'country': 'BR  '}]
+87
+[{'id': 6239, 'name': 'Santa Rita do Novo Destino', 'state': 'GO', 'country': 'BR  '}]
+88
+[{'id': 2598, 'name': 'Corumbá de Goiás', 'state': 'GO', 'country': 'BR  '}]
+89
+[{'id': 6751, 'name': 'Uberlândia', 'state': 'MG', 'country': 'BR  '}]
+90
+[{'id': 2175, 'name': 'Monte Alegre de Minas', 'state': 'MG', 'country': 'BR  '}]
+91
+[{'id': 6539, 'name': 'Ituiutaba', 'state': 'MG', 'country': 'BR  '}]
+92
+[{'id': 2193, 'name': 'Santa Vitória', 'state': 'MG', 'country': 'BR  '}, {'id': 5144, 'name': 'Santa Vitória do Palmar', 'state': 'RS', 'country': 'BR  '}]
+93
+[{'id': 5663, 'name': 'Paranaiguara', 'state': 'GO', 'country': 'BR  '}]
+94
+[{'id': 3356, 'name': 'Cachoeira Alta', 'state': 'GO', 'country': 'BR  '}]
+95
+[{'id': 5658, 'name': 'Jataí', 'state': 'GO', 'country': 'BR  '}]
+96
+[{'id': 6996, 'name': 'Jacarezinho', 'state': 'PR', 'country': 'BR  '}]
+97
+[{'id': 6711, 'name': 'Carambeí', 'state': 'PR', 'country': 'BR  '}]
+98
+[{'id': 6589, 'name': 'Jaguariaíva', 'state': 'PR', 'country': 'BR  '}]
+99
+[{'id': 3127, 'name': 'Mundo Novo', 'state': 'BA', 'country': 'BR  '}, {'id': 8339, 'name': 'Mundo Novo', 'state': 'GO', 'country': 'BR  '}, {'id': 9088, 'name': 'Mundo Novo', 'state': 'MS', 'country': 'BR  '}]
+100
+[{'id': 7674, 'name': 'Itaquiraí', 'state': 'MS', 'country': 'BR  '}]
+101
+[{'id': 5699, 'name': 'Caarapó', 'state': 'MS', 'country': 'BR  '}]
+102
+[{'id': 9096, 'name': 'Rio Brilhante', 'state': 'MS', 'country': 'BR  '}]
+103
+[{'id': 6340, 'name': 'Campo Grande', 'state': 'RJ', 'country': 'BR  '}, {'id': 7732, 'name': 'Campo Grande', 'state': 'AL', 'country': 'BR  '}, {'id': 6760, 'name': 'Campo Grande', 'state': 'MS', 'country': 'BR  '}, {'id': 5802, 'name': 'Campo Grande', 'state': 'RN', 'country': 'BR  '}, {'id': 7007, 'name': 'Campo Grande do Piauí', 'state': 'PI', 'country': 'BR  '}]
+104
+[{'id': 4129, 'name': 'Jaraguari', 'state': 'MS', 'country': 'BR  '}]
+105
+[{'id': 9099, 'name': 'São Gabriel do Oeste', 'state': 'MS', 'country': 'BR  '}]
+106
+[{'id': 5298, 'name': 'Rio Verde de Mato Grosso', 'state': 'MS', 'country': 'BR  '}]
+107
+[{'id': 5376, 'name': 'Sonora', 'state': 'MS', 'country': 'BR  '}]
+108
+[{'id': 6161, 'name': 'Paraty', 'state': 'RJ', 'country': 'BR  '}]
+109
+[{'id': 6127, 'name': 'Mangaratiba', 'state': 'RJ', 'country': 'BR  '}]
+110
+[{'id': 4212, 'name': 'Guararema', 'state': 'SP', 'country': 'BR  '}]
+111
+[{'id': 4348, 'name': 'Arujá', 'state': 'SP', 'country': 'BR  '}, {'id': 4234, 'name': 'Guarujá', 'state': 'SP', 'country': 'BR  '}, {'id': 4933, 'name': 'Guarujá do Sul', 'state': 'SC', 'country': 'BR  '}]
+112
+[{'id': 3656, 'name': 'Santa Isabel', 'state': 'SP', 'country': 'BR  '}, {'id': 8367, 'name': 'Santa Isabel', 'state': 'GO', 'country': 'BR  '}, {'id': 6495, 'name': 'Santa Isabel do Ivaí', 'state': 'PR', 'country': 'BR  '}, {'id': 7500, 'name': 'Santa Isabel do Pará', 'state': 'PA', 'country': 'BR  '}, {'id': 6226, 'name': 'Santa Isabel do Rio Negro', 'state': 'AM', 'country': 'BR  '}]
+113
+[{'id': 6114, 'name': 'Itatiaia', 'state': 'RJ', 'country': 'BR  '}]
+114
+[{'id': 6367, 'name': 'Conceição de Jacareí', 'state': 'RJ', 'country': 'BR  '}, {'id': 3849, 'name': 'Jacareí', 'state': 'SP', 'country': 'BR  '}]
+115
+[{'id': 3777, 'name': 'Pindamonhangaba', 'state': 'SP', 'country': 'BR  '}]
+116
+[{'id': 6297, 'name': 'Barra do Piraí', 'state': 'RJ', 'country': 'BR  '}]
+117
+[{'id': 6158, 'name': 'Paraíba do Sul', 'state': 'RJ', 'country': 'BR  '}]
+118
+[{'id': 9083, 'name': 'Coronel Sapucaia', 'state': 'MS', 'country': 'BR  '}, {'id': 5997, 'name': 'Sapucaia', 'state': 'RJ', 'country': 'BR  '}, {'id': 7517, 'name': 'Sapucaia', 'state': 'PA', 'country': 'BR  '}, {'id': 5195, 'name': 'Sapucaia do Sul', 'state': 'RS', 'country': 'BR  '}]
+119
+[{'id': 3732, 'name': 'Onda Verde', 'state': 'SP', 'country': 'BR  '}]
+120
+[{'id': 3873, 'name': 'José Bonifácio', 'state': 'SP', 'country': 'BR  '}]
+121
+[{'id': 3906, 'name': 'Lins', 'state': 'SP', 'country': 'BR  '}]
+122
+[{'id': 5349, 'name': 'Porto Vera Cruz', 'state': 'RS', 'country': 'BR  '}, {'id': 7990, 'name': 'Vera Cruz', 'state': 'BA', 'country': 'BR  '}, {'id': 3555, 'name': 'Vera Cruz', 'state': 'SP', 'country': 'BR  '}, {'id': 5032, 'name': 'Vera Cruz', 'state': 'RS', 'country': 'BR  '}, {'id': 5717, 'name': 'Vera Cruz', 'state': 'RN', 'country': 'BR  '}, {'id': 6264, 'name': 'Vera Cruz do Oeste', 'state': 'PR', 'country': 'BR  '}]
+123
+[{'id': 4440, 'name': 'Cristalina', 'state': 'MS', 'country': 'BR  '}, {'id': 7534, 'name': 'Cristalina', 'state': 'GO', 'country': 'BR  '}]
+124
+[{'id': 6899, 'name': 'Conselheiro Lafaiete', 'state': 'MG', 'country': 'BR  '}]
+125
+[{'id': 7650, 'name': 'Barbacena', 'state': 'MG', 'country': 'BR  '}]
+126
+[{'id': 6902, 'name': 'Paracatu', 'state': 'MG', 'country': 'BR  '}]
+127
+[{'id': 7528, 'name': 'Alagoa Grande', 'state': 'PB', 'country': 'BR  '}, {'id': 7107, 'name': 'Lagoa Grande', 'state': 'PE', 'country': 'BR  '}, {'id': 8805, 'name': 'Lagoa Grande', 'state': 'MG', 'country': 'BR  '}, {'id': 6244, 'name': 'Lagoa Grande do Maranhão', 'state': 'MA', 'country': 'BR  '}]
+128
+[{'id': 8790, 'name': 'João Pinheiro', 'state': 'MG', 'country': 'BR  '}]
+129
+[{'id': 8985, 'name': 'São Gonçalo do Abaeté', 'state': 'MG', 'country': 'BR  '}]
+130
+[{'id': 8684, 'name': 'Felixlândia', 'state': 'MG', 'country': 'BR  '}]
+131
+[{'id': 8645, 'name': 'Curvelo', 'state': 'MG', 'country': 'BR  '}]
+132
+[{'id': 8578, 'name': 'Capim Branco', 'state': 'MG', 'country': 'BR  '}]
+133
+[{'id': 8748, 'name': 'Itabirito', 'state': 'MG', 'country': 'BR  '}]
+134
+[{'id': 6670, 'name': 'Balsa Nova', 'state': 'PR', 'country': 'BR  '}]
+135
+[{'id': 6406, 'name': 'Porto Amazonas', 'state': 'PR', 'country': 'BR  '}]
+136
+[{'id': 7622, 'name': 'Guiratinga', 'state': 'MT', 'country': 'BR  '}, {'id': 4954, 'name': 'Irati', 'state': 'SC', 'country': 'BR  '}, {'id': 6994, 'name': 'Irati', 'state': 'PR', 'country': 'BR  '}, {'id': 3386, 'name': 'Itapiratins', 'state': 'TO', 'country': 'BR  '}, {'id': 3881, 'name': 'Juquiratiba', 'state': 'SP', 'country': 'BR  '}, {'id': 5337, 'name': 'Piratini', 'state': 'RS', 'country': 'BR  '}, {'id': 3790, 'name': 'Piratininga', 'state': 'SP', 'country': 'BR  '}, {'id': 3513, 'name': 'Tapiratiba', 'state': 'SP', 'country': 'BR  '}, {'id': 3472, 'name': 'Tupiratins', 'state': 'TO', 'country': 'BR  '}]
+137
+[{'id': 6570, 'name': 'Imbituva', 'state': 'PR', 'country': 'BR  '}]
+138
+[{'id': 7549, 'name': 'Bom Jesus da Lapa', 'state': 'BA', 'country': 'BR  '}, {'id': 6602, 'name': 'Lapa', 'state': 'PR', 'country': 'BR  '}, {'id': 9000, 'name': 'São José da Lapa', 'state': 'MG', 'country': 'BR  '}, {'id': 6756, 'name': 'Virgem da Lapa', 'state': 'MG', 'country': 'BR  '}]
+139
+[{'id': 7958, 'name': 'Simões Filho', 'state': 'BA', 'country': 'BR  '}]
+140
+[{'id': 3046, 'name': 'Amélia Rodrigues', 'state': 'BA', 'country': 'BR  '}]
+141
+[{'id': 4095, 'name': 'Rafael Jambeiro', 'state': 'BA', 'country': 'BR  '}]
+142
+[{'id': 7837, 'name': 'Brejões', 'state': 'BA', 'country': 'BR  '}]
+143
+[{'id': 6428, 'name': 'Jequié', 'state': 'BA', 'country': 'BR  '}]
+144
+[{'id': 4025, 'name': 'Novo Planalto', 'state': 'GO', 'country': 'BR  '}, {'id': 3793, 'name': 'Planalto', 'state': 'SP', 'country': 'BR  '}, {'id': 3355, 'name': 'Planalto', 'state': 'BA', 'country': 'BR  '}, {'id': 5338, 'name': 'Planalto', 'state': 'RS', 'country': 'BR  '}, {'id': 6400, 'name': 'Planalto', 'state': 'PR', 'country': 'BR  '}, {'id': 4773, 'name': 'Planalto Alegre', 'state': 'SC', 'country': 'BR  '}, {'id': 4416, 'name': 'Planalto da Serra', 'state': 'MT', 'country': 'BR  '}, {'id': 5149, 'name': 'Santo Antônio do Planalto', 'state': 'RS', 'country': 'BR  '}]
+145
+[{'id': 7568, 'name': 'Vitória da Conquista', 'state': 'BA', 'country': 'BR  '}]
+146
+[{'id': 4072, 'name': 'Cláudia', 'state': 'MT', 'country': 'BR  '}]
+147
+[{'id': 7690, 'name': 'Terra Nova do Norte', 'state': 'MT', 'country': 'BR  '}]
+148
+[{'id': 4197, 'name': 'Trairão', 'state': 'PA', 'country': 'BR  '}]
+149
+[{'id': 3875, 'name': 'Guia Lopes da Laguna', 'state': 'MS', 'country': 'BR  '}, {'id': 4976, 'name': 'Laguna', 'state': 'SC', 'country': 'BR  '}, {'id': 9087, 'name': 'Laguna Carapã', 'state': 'MS', 'country': 'BR  '}]
+150
+[{'id': 4881, 'name': 'Tubarão', 'state': 'SC', 'country': 'BR  '}]
+151
+[{'id': 4990, 'name': 'Maracajá', 'state': 'SC', 'country': 'BR  '}]
+152
+[{'id': 4847, 'name': 'São João do Sul', 'state': 'SC', 'country': 'BR  '}]
+153
+[{'id': 5009, 'name': 'Três Cachoeiras', 'state': 'RS', 'country': 'BR  '}]
+154
+[{'id': 5264, 'name': 'Montenegro', 'state': 'RS', 'country': 'BR  '}]
+155
+[{'id': 5321, 'name': 'Paverama', 'state': 'RS', 'country': 'BR  '}]
+156
+[{'id': 5432, 'name': 'Fontoura Xavier', 'state': 'RS', 'country': 'BR  '}]
+157
+[{'id': 5038, 'name': 'Victor Graeff', 'state': 'RS', 'country': 'BR  '}]
+158
+[{'id': 5146, 'name': 'Santo Antônio da Patrulha', 'state': 'RS', 'country': 'BR  '}]
+159
+[{'id': 5448, 'name': 'Gravataí', 'state': 'RS', 'country': 'BR  '}]
+160
