@@ -1,5 +1,5 @@
 
-testeDownTime = read.csv("/home/aluno/Downloads/OneDrive_1_09-10-2024/testeDownTIme.csv")
+testeDownTime = read.csv("D:\\Documentos\\materiasSPTECH\\Faculdade\\2Semestre\\pesquisa_inovacao\\SP2\\organizacao_TagTach\\script_python\\Dev_Python\\Modelo cpu_crasher\\testeDownTIme.csv")
 
 install.packages("dplyr")
 library(dplyr)
