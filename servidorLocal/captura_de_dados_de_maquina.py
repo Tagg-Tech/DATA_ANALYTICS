@@ -1,5 +1,6 @@
 import psutil, time, mysql.connector, platform, pandas as pd,  dotenv , os, requests,  json
 from socket import gethostname
+from datetime import datetime, timedelta
 dotenv.load_dotenv(dotenv.find_dotenv())
 senhaBD = os.getenv("SENHA_DB")
 
@@ -19,6 +20,13 @@ baseurl = os.getenv("URL")
 url = f'{baseurl}//rest/api/2/issue'
 token = os.getenv("TOKEN")
 email = os.getenv("LOGIN")
+
+ultimoChamadoCPU = datetime.now() - timedelta(hours=1)
+ultimoChamadoRAM = datetime.now() - timedelta(hours=1)
+ultimoChamadoDisco = datetime.now() - timedelta(hours=1)
+
+
+
 
 
 def mandarAlertaJira(componente, numPico):
@@ -69,12 +77,21 @@ while True:
     percentRAM = memRAM.percent 
     discoUsado = disco.used
     percentDisco = disco.percent
+ 
+ 
+ 
+    hora_atual = datetime.now()
     
-    usoDeCPU = 87
-    if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
-    if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)
-    if percentDisco >= 80:  mandarAlertaJira("disco", percentDisco)
-    
+ 
+    if usoDeCPU >= 80 and hora_atual - ultimoChamadoCPU >= timedelta(hours=1): 
+        mandarAlertaJira("CPU", usoDeCPU)
+        ultimoChamadoCPU = hora_atual
+    if percentRAM >= 80 and hora_atual - ultimoChamadoRAM >= timedelta(hours=1):
+        mandarAlertaJira("memória RAM", percentRAM)
+        ultimoChamadoRAM = hora_atual
+    if percentDisco >= 80 and hora_atual - ultimoChamadoDisco >= timedelta(hours=1):
+        mandarAlertaJira("disco", percentDisco)
+        ultimoChamadoDisco = hora_atual
     
     
     
