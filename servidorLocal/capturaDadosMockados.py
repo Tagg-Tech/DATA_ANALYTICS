@@ -9,7 +9,7 @@ i = 0
 nomeMaquina = gethostname()  
 sistemaOperacional = platform.system()
 
-dataHora = pd.Timestamp('2024-10-09 14:39:51')
+dataHora = pd.Timestamp('2024-09-28 19:39:51')
 
 
 db_connection = mysql.connector.connect(
@@ -95,7 +95,7 @@ while True:
         if numAleatorio >= 42 and numAleatorio <= 50:
             print('Entrou em estado de explosão')
             numAleatorioComponente = random.randint(1,2)
-            porcentExplosao = (random.randint(7,15)) + 80
+            porcentExplosao = (random.randint(8,16)) + 80
             estaEmPico = 'explosao'
             tempoForaDoAr = random.randint(2,6)
             estaForaDoAr = False
@@ -111,7 +111,7 @@ while True:
             estaForaDoAr = False
             print('Entrou em estado de pico')
             numAleatorioComponente = random.randint(1,2)
-            porcentExplosao = (random.randint(10,20)) + 70
+            porcentExplosao = (random.randint(8,20)) + 68
             estaEmPico = 'crescente'
             tempoForaDoAr = 0
             tempoForaDoAr = random.randint(1,4)
@@ -138,8 +138,8 @@ while True:
             freqDeCPU = 0   
             tempoForaDoAr -= 1
         elif componenteExplosao == 'cpu':
-            if estaEmPico == 'explosao': usoDeCPU += random.randint(4,6)
-            if estaEmPico == 'crescente':usoDeCPU += random.randint(2,5)
+            if estaEmPico == 'explosao': usoDeCPU += random.randint(7,9)
+            if estaEmPico == 'crescente':usoDeCPU += random.randint(3,5)
             
             if usoDeCPU > 100:
                 estaForaDoAr = True

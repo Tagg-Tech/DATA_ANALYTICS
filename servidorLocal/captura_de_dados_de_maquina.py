@@ -43,7 +43,7 @@ def mandarAlertaJira(componente, numPico):
             "fields":{
                 "project":
                     {
-                        "key":"THD"
+                        "key":"TTCS"
                     },
                     "summary": "pico de uso do componente : {} as {}".format(componente, data),
                     "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, data, nomeMaquina),
@@ -82,7 +82,7 @@ while True:
  
     hora_atual = datetime.now()
     
- 
+    
     if usoDeCPU >= 80 and hora_atual - ultimoChamadoCPU >= timedelta(hours=1): 
         mandarAlertaJira("CPU", usoDeCPU)
         ultimoChamadoCPU = hora_atual

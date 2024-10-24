@@ -19,39 +19,39 @@ email = os.getenv("LOGIN")
 
 
 
-#def mandarAlertaJira(componente, numPico):
-#    data = pd.Timestamp.now()
-#    data = data.replace(microsecond=0)
-#    headers = {
-#    "Accept": "application/json",
-#    "Content-Type": "application/json"
-#    }
-#
-#
-#    payload=json.dumps(
-#        {
-#            "fields":{
-#                "project":
-#                    {
-#                        "key":"TAG"
-#                    },
-#                    "summary": "pico de uso do componente : {} as {}".format(componente, data),
-#                    "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, data, nomeMaquina),
-#                    "issuetype":{
-#                        "name":"Support"
-#                    }
-#            }
-#        }
-#    )
-#
-#
-#
-#    response = requests.post(url,headers=headers,data=payload,auth=(email,token))
-#
-#
-#    print(response.text)
-#
-#    
+def mandarAlertaJira(componente, numPico):
+    data = pd.Timestamp.now()
+    data = data.replace(microsecond=0)
+    headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+    }
+
+
+    payload=json.dumps(
+        {
+            "fields":{
+                "project":
+                    {
+                        "key":"TAG"
+                    },
+                    "summary": "pico de uso do componente : {} as {}".format(componente, data),
+                    "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, data, nomeMaquina),
+                    "issuetype":{
+                        "name":"Support"
+                    }
+            }
+        }
+    )
+
+
+
+    response = requests.post(url,headers=headers,data=payload,auth=(email,token))
+
+
+    print(response.text)
+
+    
 
 
 def capturarDf():
@@ -78,9 +78,9 @@ def capturarDf():
         percentDisco = disco.percent
         
         
-       # if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
-       # if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)
-       # if percentDisco >= 80:  mandarAlertaJira("disco", percentDisco)
+        if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
+        if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)
+        if percentDisco >= 80:  mandarAlertaJira("disco", percentDisco)
 
         i = i + 1
 

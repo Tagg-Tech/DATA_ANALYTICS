@@ -1,9 +1,11 @@
 
-testeDownTime = read.csv("/home/aluno/Downloads/OneDrive_1_09-10-2024/testeDownTIme.csv")
+testeDownTime = read.csv("\\Users\\ivanm\\sptechLocal\\tagtech\\testeDownTIme.csv")
 
 install.packages("dplyr")
 library(dplyr)
 library(ggplot2)
+
+
 testeDownTime = subset(testeDownTime, idRegistro<=44)
 
 testeDownTime = testeDownTime %>% mutate(downTime = ifelse(percentualMemoria >= 99 | percentualCPU >= 99, 1,0))
@@ -13,7 +15,13 @@ ponto = min(testeDownTime$dataHora)
 testeDownTime$tempo = as.numeric(difftime(testeDownTime$dataHora, ponto, units="mins"))
 
 # Criei um modelo com duas variaveis independentes(x1 e x2)
+
+
+
 modelo = lm(tempo ~ testeDownTime$percentualMemoria + testeDownTime$percentualCPU, data = testeDownTime)
+
+
+modelo2 = lm(tempo ~ testeDownTime$percentualMemoria + testeDownTime$percentualCPU, data = testeDownTime)
 
 
 summary(modelo)
