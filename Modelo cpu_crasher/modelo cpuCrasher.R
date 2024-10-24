@@ -1,6 +1,7 @@
 
 testeDownTime = read.csv("\\Users\\ivanm\\sptechLocal\\tagtech\\testeDownTIme.csv")
 
+
 install.packages("dplyr")
 library(dplyr)
 library(ggplot2)
