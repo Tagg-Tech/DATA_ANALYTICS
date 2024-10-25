@@ -9,7 +9,7 @@ i = 0
 nomeMaquina = gethostname()  
 sistemaOperacional = platform.system()
 
-dataHora = pd.Timestamp('2024-09-28 19:39:51')
+dataHora = pd.Timestamp('2024-09-12 19:39:51')
 
 
 db_connection = mysql.connector.connect(
@@ -42,7 +42,7 @@ def mandarAlertaJira(componente, numPico):
                         "key":"THD"
                     },
                     "summary": "pico de uso do componente : {} as {}".format(componente, data),
-                    "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, data, nomeMaquina),
+                    "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, dataHora, nomeMaquina),
                     "issuetype":{
                         "name":"Support"
                     }
@@ -62,11 +62,18 @@ def mandarAlertaJira(componente, numPico):
 
 estaEmPico = 'nao'
 
+
+percentCPU1 = 32
+percentRAM1 = 67
+percentDisco = 9
+discoUsado = 253863952384
+freqDeCPU  =2200.00
+
+
 while True:
 
 
     if estaEmPico == 'nao':
-        
         
                 
         if(sistemaOperacional=="Windows"):
@@ -74,8 +81,10 @@ while True:
         elif(sistemaOperacional=="Linux"):
             disco = psutil.disk_usage('/')
                 
+        
+                
 
-        usoDeCPU = psutil.cpu_percent(interval=1)
+        percentCPU = psutil.cpu_percent(interval=1)
         freqDeCPU = psutil.cpu_freq()
         freqDeCPU = freqDeCPU.current
         
@@ -101,7 +110,7 @@ while True:
             estaForaDoAr = False
             
             if numAleatorioComponente == 1:
-                usoDeCPU = porcentExplosao
+                percentCPU = porcentExplosao
                 componenteExplosao = 'cpu'
             else:
                 percentRAM = porcentExplosao
@@ -120,7 +129,7 @@ while True:
             
             
             if numAleatorioComponente == 1:
-                usoDeCPU = porcentExplosao
+                percentCPU = porcentExplosao
                 componenteExplosao = 'cpu'
             else:
                 percentRAM = porcentExplosao
@@ -134,19 +143,19 @@ while True:
             percentRAM = 0
             discoUsado = 0
             percentDisco = 0
-            usoDeCPU = 0
+            percentCPU = 0
             freqDeCPU = 0   
             tempoForaDoAr -= 1
         elif componenteExplosao == 'cpu':
-            if estaEmPico == 'explosao': usoDeCPU += random.randint(7,9)
-            if estaEmPico == 'crescente':usoDeCPU += random.randint(3,5)
+            if estaEmPico == 'explosao': percentCPU += random.randint(7,9)
+            if estaEmPico == 'crescente':percentCPU += random.randint(3,5)
             
-            if usoDeCPU > 100:
+            if percentCPU > 100:
                 estaForaDoAr = True
                 percentRAM = 0
                 discoUsado = 0
                 percentDisco = 0
-                usoDeCPU = 0
+                percentCPU = 0
                 freqDeCPU = 0   
                 tempoForaDoAr -= 1
             else:
@@ -168,11 +177,11 @@ while True:
                 percentRAM = 0
                 discoUsado = 0
                 percentDisco = 0
-                usoDeCPU = 0
+                percentCPU = 0
                 freqDeCPU = 0   
                 tempoForaDoAr -= 1
             else:
-                usoDeCPU = psutil.cpu_percent(interval=1)
+                percentCPU = psutil.cpu_percent(interval=1)
                 freqDeCPU = psutil.cpu_freq()
                 freqDeCPU = freqDeCPU.current
                 discoUsado = disco.used
@@ -184,7 +193,7 @@ while True:
             
 
     
-    # if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
+    # if percentCPU >= 80:      mandarAlertaJira("CPU", percentCPU)
     # if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)
     # if percentDisco >= 80:  mandarAlertaJira("disco", percentDisco)
     
@@ -198,11 +207,11 @@ while True:
     i = i + 1
 
     sql = "INSERT INTO registros ( percentualMemoria, qtdUtilizadaDisco, percentualDisco, percentualCPU, frequenciaCPU, dataHora) VALUES (%s, %s, %s, %s, %s, %s)"
-    values = (percentRAM, discoUsado, percentDisco, usoDeCPU, freqDeCPU, dataHora)
+    values = (percentRAM, discoUsado, percentDisco, percentCPU, freqDeCPU, dataHora)
     cursor.execute(sql, values)
     db_connection.commit()
 
-    dataHora += timedelta(minutes=10)
+    dataHora += timedelta(minutes=5)
 
     time.sleep(3)
     
