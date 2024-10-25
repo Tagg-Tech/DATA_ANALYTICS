@@ -55,7 +55,7 @@ def mandarAlertaJira(componente, numPico):
 
 
 def capturarDf():
-    column_names = ['idDados', 'dataHora', 'percCPU', 'tempoInativo', 'percRAM', 'percDisc', 'usedDisc', 'fkNotebook']
+    column_names = ['idDados', 'dataHora', 'percCPU', 'tempoInativo', 'percRAM', 'gigaBytesRAM', 'percDisc', 'usedDisc', 'fkNotebook']
 
     df = pd.DataFrame(columns=column_names)
     i = 0
@@ -73,6 +73,7 @@ def capturarDf():
         freqDeCPU = freqDeCPU.current
         
         memRAM = psutil.virtual_memory()
+        ramGigaBytes = memRAM.used / 1024 ** 3
         percentRAM = memRAM.percent 
         discoUsado = disco.used
         percentDisco = disco.percent
@@ -84,7 +85,7 @@ def capturarDf():
 
         i = i + 1
 
-        values = (percentRAM, discoUsado, percentDisco, usoDeCPU, freqDeCPU)
+        values = (percentRAM, ramGigaBytes, discoUsado, percentDisco, usoDeCPU, freqDeCPU)
         data = pd.Timestamp.now()
         data_formatada = data.strftime('%Y-%m-%d_%H-%M-%S')
         dados = {
@@ -93,6 +94,7 @@ def capturarDf():
         'percCPU': freqDeCPU,
         'tempoInativo': freqDeCPU,
         'percRAM': percentRAM,
+        'gigaBytesRAM': ramGigaBytes,
         'percDisc': percentDisco,
         'usedDisc': discoUsado,
         'fkNotebook': 101

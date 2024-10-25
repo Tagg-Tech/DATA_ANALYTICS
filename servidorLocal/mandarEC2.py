@@ -29,7 +29,7 @@ print(resultado)
 
 print(type(resultado))
 
-column_names = ['idRegistro', 'percMemoria', 'qtdUtilizadaDisco', 'percDisco', 'percCPU', 'freqCPU', 'dataHora']
+column_names = ['idRegistro', 'gigaBytesMemoria', 'percMemoria', 'qtdUtilizadaDisco', 'percDisco', 'percCPU', 'freqCPU', 'dataHora']
 
 df = pd.DataFrame(resultado, columns=column_names)
 print(df)
