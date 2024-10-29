@@ -63,38 +63,38 @@ def mandarAlertaJira(componente, numPico):
 estaEmPico = 'nao'
 
 
-percentCPU1 = 32
-percentRAM1 = 67
-percentDisco = 9
-discoUsado = 253863952384
-freqDeCPU  =2200.00
-
+percentCPU = [32,68,14]
+percentRAM = [67,61,49]
+percentDisco = [12,59, 37]
+discoUsado = [453863952384, 253863952384, 333863952384]
+freqDeCPU = [2200.00, 2200.00, 2200.00]
 
 while True:
 
 
     if estaEmPico == 'nao':
         
-                
-        if(sistemaOperacional=="Windows"):
-            disco = psutil.disk_usage('C:\\')
-        elif(sistemaOperacional=="Linux"):
-            disco = psutil.disk_usage('/')
-                
         
-                
-
-        percentCPU = psutil.cpu_percent(interval=1)
-        freqDeCPU = psutil.cpu_freq()
-        freqDeCPU = freqDeCPU.current
+        entrarDisco = random.randint(1,15)
         
-        memRAM = psutil.virtual_memory()
-        percentRAM = memRAM.percent 
-        discoUsado = disco.used
-        percentDisco = disco.percent
-    
-    
-    
+        if(entrarDisco == 1):
+            qualDisco = random.randint(1,3)
+            aumentoDisco = round(random.uniform(0.1, 0.6),2)
+            if qualDisco == 1:
+                percentDisco[0] += aumentoDisco
+                
+            elif qualDisco == 2:
+                percentDisco[1] += aumentoDisco
+            else:
+                percentDisco[2] += aumentoDisco
+                
+                
+            
+            
+            cont = 0
+            while cont < (len(percentCPU)) - 1:
+                percentRAM += round((random.uniform(-4,4)),2)
+                percentCPU += round((random.uniform(-4,4)),2)
 
         
     
@@ -103,6 +103,7 @@ while True:
         numAleatorio = random.randint(1,500)
         if numAleatorio >= 42 and numAleatorio <= 50:
             print('Entrou em estado de explosão')
+            computadorEmPico = random.randint(0,2)
             numAleatorioComponente = random.randint(1,2)
             porcentExplosao = (random.randint(8,16)) + 80
             estaEmPico = 'explosao'

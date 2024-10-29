@@ -36,7 +36,7 @@ def mandarAlertaJira(componente, numPico):
                         "key":"TAG"
                     },
                     "summary": "pico de uso do componente : {} as {}".format(componente, data),
-                    "description": "O componente {} teve um pico de uso de {} por cento as {} no servidor {}".format(componente,numPico, data, nomeMaquina),
+                    "description": "O componente {} teve um pico de uso de ´´{} por cento as **{} no servidor ''{}".format(componente,numPico, data, nomeMaquina),
                     "issuetype":{
                         "name":"Support"
                     }
