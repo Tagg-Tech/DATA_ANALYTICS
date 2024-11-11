@@ -95,8 +95,8 @@ while True:
     
     i = i + 1
 
-    sql = "INSERT INTO registros ( percentualMemoria, gigaBytesMemoria, qtdUtilizadaDisco, percentualDisco, percentualCPU, frequenciaCPU) VALUES (%s, %s, %s, %s, %s, %s)"
-    values = (percentRAM, ramGigaBites, discoUsado, percentDisco, usoDeCPU, freqDeCPU)
+    sql = "INSERT INTO registros ( percentualMemoria, gigaBytesMemoria, qtdUtilizadaDisco, percentualDisco, percentualCPU, frequenciaCPU, fkNotebook) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    values = (percentRAM, ramGigaBites, discoUsado, percentDisco, usoDeCPU, freqDeCPU, nomeMaquina)
     cursor.execute(sql, values)
     db_connection.commit()
 
