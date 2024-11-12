@@ -14,7 +14,7 @@ print(nomeMaquina)
 sistemaOperacional = platform.system()
 
 db_connection = mysql.connector.connect(
-    host='localhost', user='aluno', password=senhaBD, database='TagTech' # Host = ip da EC2
+    host='localhost', user='root', password=senhaBD, database='TagTech' # Host = ip da EC2
     )
 cursor = db_connection.cursor()
 
@@ -29,37 +29,37 @@ email = os.getenv("LOGIN")
 
 
 
-def mandarAlertaJira(componente, numPico):
-    data = pd.Timestamp.now()
-    data = data.replace(microsecond=0)
-    headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json"
-    }
+# def mandarAlertaJira(componente, numPico):
+#     data = pd.Timestamp.now()
+#     data = data.replace(microsecond=0)
+#     headers = {
+#     "Accept": "application/json",
+#     "Content-Type": "application/json"
+#     }
 
 
-    payload=json.dumps(
-        {
-            "fields":{
-                "project":
-                    {
-                        "key":"TAG"
-                    },
-                    "summary": "pico de uso do componente : {} as {}".format(componente, data),
-                    "description": "O componente {} teve um pico de uso de ´´{} por cento as **{} no servidor ''{}".format(componente,numPico, data, nomeMaquina),
-                    "issuetype":{
-                        "name":"Support"
-                    }
-            }
-        }
-    )
+#     payload=json.dumps(
+#         {
+#             "fields":{
+#                 "project":
+#                     {
+#                         "key":"TAG"
+#                     },
+#                     "summary": "pico de uso do componente : {} as {}".format(componente, data),
+#                     "description": "O componente {} teve um pico de uso de ´´{} por cento as **{} no servidor ''{}".format(componente,numPico, data, nomeMaquina),
+#                     "issuetype":{
+#                         "name":"Support"
+#                     }
+#             }
+#         }
+#     )
 
 
 
-    response = requests.post(url,headers=headers,data=payload,auth=(email,token))
+#     response = requests.post(url,headers=headers,data=payload,auth=(email,token))
 
 
-    print(response.text)
+#     print(response.text)
 
     
 
@@ -88,10 +88,14 @@ def capturarDf():
         discoUsado = disco.used
         percentDisco = disco.percent
         
+        sql_select = "SELECT alertaCPU,alertaRAM,alertaDISCO FROM maquina WHERE placaDeRede = %s"
+        values_select = (nomeMaquina,)    
+        cursor.execute(sql_select,values_select)
+        result = cursor.fetchone()
         
-        if usoDeCPU >= 80:      mandarAlertaJira("CPU", usoDeCPU)
-        if percentRAM >= 80:    mandarAlertaJira("memória RAM", percentRAM)
-        if percentDisco >= 80:  mandarAlertaJira("disco", percentDisco)
+        # if usoDeCPU >= result[0]:      mandarAlertaJira("CPU", usoDeCPU)
+        # if percentRAM >= result[1]:    mandarAlertaJira("memória RAM", percentRAM)
+        # if percentDisco >= result[2]:  mandarAlertaJira("disco", percentDisco)
 
         i = i + 1
 
@@ -120,7 +124,7 @@ def capturarDf():
 
 
         sql = "INSERT INTO registros ( percentualMemoria, gigaBytesMemoria, qtdUtilizadaDisco, percentualDisco, percentualCPU, frequenciaCPU, fkMaquina) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-        values = (percentRAM, ramGigaBytes, discoUsado, percentDisco, usoDeCPU, freqDeCPU, result)
+        values = (percentRAM, ramGigaBytes, discoUsado, percentDisco, usoDeCPU, freqDeCPU, id_maquina)
         cursor.execute(sql, values)
         db_connection.commit()
     else:
