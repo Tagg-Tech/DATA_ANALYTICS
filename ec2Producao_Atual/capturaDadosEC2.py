@@ -4,7 +4,7 @@ import time
 import platform
 from socket import gethostname
 import pandas as pd
-
+from datetime import datetime, timedelta
 
 dotenv.load_dotenv(dotenv.find_dotenv())
 senhaBD = os.getenv("SENHA_DB")
@@ -26,52 +26,63 @@ email = os.getenv("LOGIN")
 
 
 
+ultimoChamadoCPU = datetime.now() - timedelta(hours=1)
+ultimoChamadoRAM = datetime.now() - timedelta(hours=1)
+ultimoChamadoDisco = datetime.now() - timedelta(hours=1)
+
+
+print(ultimoChamadoRAM)
 
 
 
-# def mandarAlertaJira(componente, numPico):
-#     data = pd.Timestamp.now()
-#     data = data.replace(microsecond=0)
-#     headers = {
-#     "Accept": "application/json",
-#     "Content-Type": "application/json"
-#     }
 
 
-#     payload=json.dumps(
-#         {
-#             "fields":{
-#                 "project":
-#                     {
-#                         "key":"TAG"
-#                     },
-#                     "summary": "pico de uso do componente : {} as {}".format(componente, data),
-#                     "description": "O componente {} teve um pico de uso de ´´{} por cento as **{} no servidor ''{}".format(componente,numPico, data, nomeMaquina),
-#                     "issuetype":{
-#                         "name":"Support"
-#                     }
-#             }
-#         }
-#     )
+def mandarAlertaJira(componente, numPico):
+    data = pd.Timestamp.now()
+    data = data.replace(microsecond=0)
+    headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+    }
+
+
+    payload=json.dumps(
+        {
+            "fields":{
+                "project":
+                    {
+                        "key":"TTCS"
+                    },
+                    "summary": "pico de uso do componente : {} as {}".format(componente, data),
+                    "description": "O componente {} teve um pico de uso de ´´{} por cento as **{} no servidor ''{}".format(componente,numPico, data, nomeMaquina),
+                    "issuetype":{
+                        "name":"Support"
+                    }
+            }
+        }
+    )
 
 
 
-#     response = requests.post(url,headers=headers,data=payload,auth=(email,token))
+    response = requests.post(url,headers=headers,data=payload,auth=(email,token))
 
 
-#     print(response.text)
-
-    
+    print(response.text)
 
 
 def capturarDf():
+    global ultimoChamadoCPU, ultimoChamadoRAM, ultimoChamadoDisco  
+    
+    
+    print("entrou")
     column_names = ['idDados', 'dataHora', 'percCPU', 'tempoInativo', 'percRAM', 'gigaBytesRAM', 'percDisc', 'usedDisc', 'fkNotebook']
 
     df = pd.DataFrame(columns=column_names)
     i = 0
 
+    
     while i < 5:
-
+        print("loop",  i)
     # Criar o DataFrame vazio com as colunas definidas
 
         if(sistemaOperacional=="Windows"):
@@ -93,10 +104,19 @@ def capturarDf():
         cursor.execute(sql_select,values_select)
         result = cursor.fetchone()
         
-        # if usoDeCPU >= result[0]:      mandarAlertaJira("CPU", usoDeCPU)
-        # if percentRAM >= result[1]:    mandarAlertaJira("memória RAM", percentRAM)
-        # if percentDisco >= result[2]:  mandarAlertaJira("disco", percentDisco)
-
+        
+        hora_atual = datetime.now()
+        if usoDeCPU >= 80 and hora_atual - ultimoChamadoCPU >= timedelta(hours=1): 
+            mandarAlertaJira("CPU", usoDeCPU)
+            ultimoChamadoCPU = hora_atual
+        if percentRAM >= 80 and hora_atual - ultimoChamadoRAM >= timedelta(hours=1):
+            mandarAlertaJira("memória RAM", percentRAM)
+            ultimoChamadoRAM = hora_atual
+        if percentDisco >= 80 and hora_atual - ultimoChamadoDisco >= timedelta(hours=1):
+            mandarAlertaJira("disco", percentDisco)
+            ultimoChamadoDisco = hora_atual
+        
+    
         i = i + 1
 
         values = (percentRAM, ramGigaBytes, discoUsado, percentDisco, usoDeCPU, freqDeCPU)
@@ -150,4 +170,5 @@ def capturarDf():
     
     
 while True:
+    print("rodando")
     capturarDf()
