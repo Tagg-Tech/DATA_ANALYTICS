@@ -80,7 +80,7 @@ while True:
     percentDisco = disco.percent
  
     hora_atual = datetime.now()
-    
+    usoDeCPU = 82.2
    
     if usoDeCPU >= 80 and hora_atual - ultimoChamadoCPU >= timedelta(hours=1): 
         mandarAlertaJira("CPU", usoDeCPU)

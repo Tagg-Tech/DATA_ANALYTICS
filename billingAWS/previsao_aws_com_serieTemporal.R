@@ -1,68 +1,52 @@
-# Carregando bibliotecas necessárias
 library(forecast)
 library(tidyverse)
 
-# Dados do primeiro servidor
 servidor1 <- data.frame(
   data = seq(as.Date("2024-06-01"), as.Date("2024-11-01"), by = "month"),
-  vpc = c(0, 0, 0.08, 0.12, 0.70, 0.80),
-  ec2 = c(0, 0, 0.05, 0.08, 0.25, 0.50),
-  compute = c(0, 0, 0.02, 0.05, 0.13, 0.15)
+  custo = c(0, 0, 0.15, 0.25, 1.08, 1.45)
 )
 
-# Dados do segundo servidor
 servidor2 <- data.frame(
   data = seq(as.Date("2024-06-01"), as.Date("2024-11-01"), by = "month"),
-  vpc = c(0, 0, 0, 0.2, 0.3, 0.8),
-  ec2 = c(0, 0, 0, 0.8, 1.4, 0.3),
-  compute = c(0, 0, 0, 0.2, 0.3, 0.2)
+  custo = c(0, 0, 0, 1.2, 2.0, 1.3)
 )
 
-# Função para fazer previsão usando regressão linear
-fazer_previsao <- function(dados, servico, meses_previsao = 9) {
-  ts_data <- ts(dados[[servico]], frequency = 12)
+fazer_previsao <- function(dados) {
+  meses_previsao <- 9
+  ts_data <- ts(dados$custo, frequency = 12) 
+  
+  #Aqui o modelo pega a coluna que contem os custos e define cada dado como de um "periodo" dentro do total de 12 
+  #Simbolizando os meses do ano
+  
   modelo <- tslm(ts_data ~ trend)
+  #tslm = Time Series lm 
+  #Trend representa o tempo (meses no caso)
+  # tslm 
+  
   previsao <- forecast(modelo, h = meses_previsao)
   return(previsao)
 }
 
-
-# Função para calcular previsões para todos os serviços
-prever_todos_servicos <- function(servidor, nome_servidor) {
-  servicos <- c("vpc", "ec2", "compute")
-  resultados <- list()
+# Função para prever custos
+prever_custos <- function(servidor, nome_servidor) {
+  previsao <- fazer_previsao(servidor)
   
-  for(servico in servicos) {
-    previsao <- fazer_previsao(servidor, servico)
-    resultados[[servico]] <- previsao
-  }
-  
-  # Criar dataframe com resultados
-  datas_futuras <- seq(max(servidor$data), by = "month", length.out = 10)
-  
+  # Criar dataframe com previsões
+  datas_futuras <- seq(max(servidor$data) + 1, by = "month", length.out = length(previsao$mean))
   resultados_df <- data.frame(
     data = datas_futuras,
-    vpc = c(tail(servidor$vpc, 1), resultados$vpc$mean),
-    ec2 = c(tail(servidor$ec2, 1), resultados$ec2$mean),
-    compute = c(tail(servidor$compute, 1), resultados$compute$mean)
+    custo = as.numeric(previsao$mean), # Apenas as previsões
+    tipo = "Previsão"
   )
-  
-  # Calcular total mensal
-  resultados_df$total <- rowSums(resultados_df[, c("vpc", "ec2", "compute")])
-  resultados_df$tipo <- "Previsão"
- 
   
   # Preparar dados históricos
   dados_historicos <- servidor
-  dados_historicos$total <- rowSums(dados_historicos[, c("vpc", "ec2", "compute")])
   dados_historicos$tipo <- "Real"
-  
-  
   
   # Combinar dados históricos e previsões
   dados_completos <- rbind(
     dados_historicos,
-    resultados_df[, names(dados_historicos)]
+    resultados_df
   )
   
   dados_completos$servidor <- nome_servidor
@@ -70,13 +54,9 @@ prever_todos_servicos <- function(servidor, nome_servidor) {
 }
 
 
-
-
 # Fazer previsões para ambos os servidores
-previsoes_servidor1 <- prever_todos_servicos(servidor1, "Servidor 1")
-previsoes_servidor2 <- prever_todos_servicos(servidor2, "Servidor 2")
-
-
+previsoes_servidor1 <- prever_custos(servidor1, "Servidor 1")
+previsoes_servidor2 <- prever_custos(servidor2, "Servidor 2")
 
 # Combinar resultados
 todas_previsoes <- rbind(previsoes_servidor1, previsoes_servidor2)
@@ -88,7 +68,7 @@ plotar_previsoes_barras <- function(previsoes, servidor) {
   
   # Criar o gráfico
   ggplot(previsoes %>% filter(servidor == !!servidor), 
-         aes(x = data, y = total, fill = tipo)) +
+         aes(x = data, y = custo, fill = tipo)) +
     geom_bar(stat = "identity", position = "dodge", width = 15) +
     scale_fill_manual(values = cores) +
     theme_minimal() +
@@ -109,12 +89,11 @@ plotar_previsoes_barras <- function(previsoes, servidor) {
 }
 
 # Plotar os gráficos
-plot1 <- plotar_previsoes_barras(todas_previsoes, "Servidor 1")
-plot2 <- plotar_previsoes_barras(todas_previsoes, "Servidor 2")
+plotar_previsoes_barras(todas_previsoes, "Servidor 1")
+plotar_previsoes_barras(todas_previsoes, "Servidor 2")
 
-# Para visualizar os gráficos, execute:
-print(plot1)
-print(plot2)
 
+# Salvar os gráficos
 ggsave("previsao_servidor1.png", plot1, width = 10, height = 6)
 ggsave("previsao_servidor2.png", plot2, width = 10, height = 6)
+
