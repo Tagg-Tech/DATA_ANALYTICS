@@ -1,6 +1,4 @@
 
-
-
 library(forecast)
 library(tidyverse)
 
@@ -11,19 +9,13 @@ servidor1 <- data.frame(
   custo = c(0, 0, 0.15, 0.25, 1.08, 1.45)
 )
 
+
 meses_previsao <- 9
 
 ts_data <- ts(servidor1$custo, frequency = 12)
 
-#Aqui o modelo pega a coluna que contem os custos e define cada dado como de um "periodo" dentro do total de 12 
-#Simbolizando os meses do ano
-
 
 modelo <- tslm(ts_data ~ trend)
-
-#tslm = Time Series lm 
-#Trend representa o tempo (meses no caso)
-# Um modelo de regressão normal so que com tendencia
 modelo
 
 
@@ -31,7 +23,6 @@ previsao <- forecast(modelo, h = meses_previsao)
 
 
 previsao
-#forecast faz previsoes com base em um modelo de series temporais
 
 
 datas_futuras <- seq(max(servidor1$data) + 1, by = "month", length.out = length(previsao$mean))
@@ -50,11 +41,7 @@ dados_completos <- rbind(
   resultados_df
 )
 
-
-
-
 dados_completos$servidor <- "Servidor 1"
-
 
 cores <- c("Real" = "#2196F3", "Previsão" = "#FF9800")
 
@@ -85,59 +72,39 @@ ggplot(dados_completos,
 # Calculando preço da LAMBDA:
 
 # Roda a cada 10 segundos, ou seja, 360 vezes por hora. Um mes tem aproximadamente 720 horas
-
 total_execucoes = 360 * 720
-
-
 # Cada csv tem 435 Bytes
-
 tamanho_total_dados = 435 * total_execucoes
-
 # arredondando para mb
-
 tamanho_total_dados <- round(tamanho_total_dados / (1024^2), 2)
 
 # A LAMBDA cobra por uso de RAM por segundo (GB-segundo)
 
 #informações do cloudWatch
-
 memoria_alocada = 0.5 #0.5 GB ou seja 512 mb
-
 duracao_media = 0.2 #segundos
 
 duracao_gb_segundos = total_execucoes * duracao_media * memoria_alocada
-
 duracao_gb_segundos
 
 preco_gb_segundo = 0.0000166667
 
 preco_lambda = duracao_gb_segundos * preco_gb_segundo
-
 preco_lambda
 
-
 #custos aws:
-
 custo_leitura_s3 = 0.0004 # por 1000
-
 custo_gravacao_s3 = 0.005 # por 1000
-
 custo_leitura_total =  (total_execucoes / 1000)  * custo_leitura_s3
-
 custo_gravacao_total = (total_execucoes / 1000)  * custo_gravacao_s3
 
-
 custo_leitura_total
-
 custo_gravacao_total
 
 custo_s3 = custo_gravacao_total + custo_leitura_total
-
 custo_s3
 
-
 custo_total = custo_s3 + preco_lambda
-
 custo_total
 
 

@@ -16,7 +16,7 @@ ts_data <- ts(df$custo, frequency = 12)
 
 modelo <- tslm(ts_data ~trend)
 
-modelo
+summary(modelo)
 
 #Aqui o modelo pega a coluna que contem os custos e define cada dado como de um "periodo" dentro do total de 12 
 #Simbolizando os meses do ano
