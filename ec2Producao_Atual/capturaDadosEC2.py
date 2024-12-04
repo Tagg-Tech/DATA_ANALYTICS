@@ -12,12 +12,12 @@ i=0
 nomeMaquina = gethostname()
 print(nomeMaquina)  
 sistemaOperacional = platform.system()
-
+print('antes do banco')
+print('passando pro banco',flush=True)
 db_connection = mysql.connector.connect(
-    host='localhost', user='root', password=senhaBD, database='TagTech' # Host = ip da EC2
+    host='localhost', user='gaspabook', password=senhaBD, database='TagTech',port=3306 # Host = ip da EC2
     )
 cursor = db_connection.cursor()
-
 
 baseurl = os.getenv("URL")
 url = f'{baseurl}//rest/api/2/issue'
@@ -106,13 +106,13 @@ def capturarDf():
         
         
         hora_atual = datetime.now()
-        if usoDeCPU >= 80 and hora_atual - ultimoChamadoCPU >= timedelta(hours=1): 
+        if usoDeCPU >= result[0] and hora_atual - ultimoChamadoCPU >= timedelta(hours=1): 
             mandarAlertaJira("CPU", usoDeCPU)
             ultimoChamadoCPU = hora_atual
-        if percentRAM >= 80 and hora_atual - ultimoChamadoRAM >= timedelta(hours=1):
+        if percentRAM >= result[1] and hora_atual - ultimoChamadoRAM >= timedelta(hours=1):
             mandarAlertaJira("memória RAM", percentRAM)
             ultimoChamadoRAM = hora_atual
-        if percentDisco >= 80 and hora_atual - ultimoChamadoDisco >= timedelta(hours=1):
+        if percentDisco >= result[2] and hora_atual - ultimoChamadoDisco >= timedelta(hours=1):
             mandarAlertaJira("disco", percentDisco)
             ultimoChamadoDisco = hora_atual
         
@@ -166,7 +166,7 @@ def capturarDf():
         
     print("##############################################################################################")
         
-    df.to_csv(f'csv/{data_formatada}.csv', index=False)
+    df.to_csv(f'ec2Producao_Atual/csv/{data_formatada}.csv', index=False)
     
     
 while True:
