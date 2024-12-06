@@ -15,7 +15,7 @@ sistemaOperacional = platform.system()
 print('antes do banco')
 print('passando pro banco',flush=True)
 db_connection = mysql.connector.connect(
-    host='localhost', user='gaspabook', password=senhaBD, database='TagTech',port=3306 # Host = ip da EC2
+    host='localhost', user='gaspa', password=senhaBD, database='TagTech',port=3306,ssl_disabled = True # Host = ip da EC2
     )
 cursor = db_connection.cursor()
 
@@ -122,9 +122,10 @@ def capturarDf():
         values = (percentRAM, ramGigaBytes, discoUsado, percentDisco, usoDeCPU, freqDeCPU)
         data = pd.Timestamp.now()
         data_formatada = data.strftime('%Y-%m-%d_%H-%M-%S')
+        print(data_formatada)
         dados = {
         'idDados': i,
-        'dataHora': data,
+        'dataHora': data_formatada,
         'percCPU': freqDeCPU,
         'tempoInativo': freqDeCPU,
         'percRAM': percentRAM,
